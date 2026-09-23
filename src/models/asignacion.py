@@ -9,5 +9,4 @@ class Asignacion:
 
     id_sesion: UUID
     id_salon: str
-    dia: str
     id_bloque: UUID
