@@ -1,0 +1,800 @@
+{
+  "calendario": {
+    "bloques": [
+      {
+        "id": "d4e4e9ee-260a-4d24-9213-75a0ff86e912",
+        "dia": "lunes",
+        "hora_inicio": "06:00",
+        "hora_fin": "08:00"
+      },
+      {
+        "id": "d3a170fe-7a81-495f-94ed-c84003dc56da",
+        "dia": "lunes",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00"
+      },
+      {
+        "id": "8dbfe966-785c-4a3d-be86-4882d4553dfb",
+        "dia": "lunes",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00"
+      },
+      {
+        "id": "69dbf497-29a4-43cd-ba18-2de4de69d21b",
+        "dia": "lunes",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00"
+      },
+      {
+        "id": "d380d194-174b-4e48-b2ec-224ab9656844",
+        "dia": "lunes",
+        "hora_inicio": "14:00",
+        "hora_fin": "16:00"
+      },
+      {
+        "id": "d4a620b8-270a-403b-a946-28b825f99450",
+        "dia": "lunes",
+        "hora_inicio": "16:00",
+        "hora_fin": "18:00"
+      },
+      {
+        "id": "74d60546-a545-40f3-8fc5-2fa13658bb03",
+        "dia": "martes",
+        "hora_inicio": "06:00",
+        "hora_fin": "08:00"
+      },
+      {
+        "id": "771959e9-0c05-4bbc-aaac-99a314485d8f",
+        "dia": "martes",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00"
+      },
+      {
+        "id": "6b2c6a66-7475-4ff9-ad31-72f0013cba8a",
+        "dia": "martes",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00"
+      },
+      {
+        "id": "72e2a074-fca0-4f00-b174-7d6ed2b74a9a",
+        "dia": "martes",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00"
+      },
+      {
+        "id": "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3",
+        "dia": "martes",
+        "hora_inicio": "14:00",
+        "hora_fin": "16:00"
+      },
+      {
+        "id": "24304de5-231b-427a-90cc-d2235819852c",
+        "dia": "martes",
+        "hora_inicio": "16:00",
+        "hora_fin": "18:00"
+      },
+      {
+        "id": "f96d6cb8-8879-422e-be41-165bfa181d1f",
+        "dia": "miercoles",
+        "hora_inicio": "06:00",
+        "hora_fin": "08:00"
+      },
+      {
+        "id": "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6",
+        "dia": "miercoles",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00"
+      },
+      {
+        "id": "54eed005-3ef5-44ec-bcab-b50baf950274",
+        "dia": "miercoles",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00"
+      },
+      {
+        "id": "451e24ca-dcf1-4ad2-898a-62a4f5950ef5",
+        "dia": "miercoles",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00"
+      },
+      {
+        "id": "0e4d2e81-033e-41bf-9ded-c6494f4ac455",
+        "dia": "miercoles",
+        "hora_inicio": "14:00",
+        "hora_fin": "16:00"
+      },
+      {
+        "id": "36d63d77-88c6-43e3-a27e-bc15a4eeeec1",
+        "dia": "miercoles",
+        "hora_inicio": "16:00",
+        "hora_fin": "18:00"
+      },
+      {
+        "id": "60c66419-df6d-4dee-85ad-c1e24b3c7641",
+        "dia": "jueves",
+        "hora_inicio": "06:00",
+        "hora_fin": "08:00"
+      },
+      {
+        "id": "7f913d42-a233-4120-8165-59498c809641",
+        "dia": "jueves",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00"
+      },
+      {
+        "id": "79ea2180-da09-4b90-b2e5-d6942c06c8ba",
+        "dia": "jueves",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00"
+      },
+      {
+        "id": "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5",
+        "dia": "jueves",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00"
+      },
+      {
+        "id": "72aeea64-454a-44e8-9be6-d82249c055db",
+        "dia": "jueves",
+        "hora_inicio": "14:00",
+        "hora_fin": "16:00"
+      },
+      {
+        "id": "75dc4e92-6814-4b2f-9148-5e53a87f609a",
+        "dia": "jueves",
+        "hora_inicio": "16:00",
+        "hora_fin": "18:00"
+      },
+      {
+        "id": "c9bca452-ca3b-40e2-84b6-099d5027d35a",
+        "dia": "viernes",
+        "hora_inicio": "06:00",
+        "hora_fin": "08:00"
+      },
+      {
+        "id": "bda4cf4a-974f-46df-89a0-eedf3b01ef04",
+        "dia": "viernes",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00"
+      },
+      {
+        "id": "7617e0ff-7a32-4166-bea3-f6d72939a693",
+        "dia": "viernes",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00"
+      },
+      {
+        "id": "2afae95d-8a47-46e7-9e64-75a4bb185431",
+        "dia": "viernes",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00"
+      },
+      {
+        "id": "5b7d75bf-204f-421d-b361-f51bbd2139eb",
+        "dia": "viernes",
+        "hora_inicio": "14:00",
+        "hora_fin": "16:00"
+      },
+      {
+        "id": "839bf8e6-f863-4172-8b35-f719775461a2",
+        "dia": "viernes",
+        "hora_inicio": "16:00",
+        "hora_fin": "18:00"
+      }
+    ]
+  },
+  "salones": [
+    {
+      "id": "6-107",
+      "capacidad": 24
+    },
+    {
+      "id": "9-205",
+      "capacidad": 22
+    },
+    {
+      "id": "13-101",
+      "capacidad": 23
+    },
+    {
+      "id": "3-300",
+      "capacidad": 25
+    }
+  ],
+  "profesores": [
+    {
+      "id": "222f508c-0fc5-4df9-9848-1a024e0eba54",
+      "nombre": "Profesor_01",
+      "id_materia": "c5519d4b-7c4c-4f8b-909a-263c781941b5",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 1,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 2,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 0,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 1,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 1,
+        "d4a620b8-270a-403b-a946-28b825f99450": 2,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 1,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 2,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 1,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 2,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 0,
+        "24304de5-231b-427a-90cc-d2235819852c": 2,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 2,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 0,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 2,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 2,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 1,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 2,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 1,
+        "7f913d42-a233-4120-8165-59498c809641": 0,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 1,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 1,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 0,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 1,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 0,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 2,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 2,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 1,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 2,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 0
+      }
+    },
+    {
+      "id": "38448c5d-4807-4a1c-b786-8a9495a51ba5",
+      "nombre": "Profesor_02",
+      "id_materia": "f21a106d-be3b-42ec-ad25-56f994617e34",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 1,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 2,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 2,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 2,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 0,
+        "d4a620b8-270a-403b-a946-28b825f99450": 0,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 1,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 0,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 2,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 2,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 0,
+        "24304de5-231b-427a-90cc-d2235819852c": 2,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 1,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 1,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 0,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 0,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 1,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 1,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 0,
+        "7f913d42-a233-4120-8165-59498c809641": 0,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 0,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 2,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 0,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 0,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 2,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 1,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 0,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 2,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 0,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 0
+      }
+    },
+    {
+      "id": "47c91a76-f8bb-4bbe-ad83-8c6df1bb7a69",
+      "nombre": "Profesor_03",
+      "id_materia": "4426853f-cfb7-45dc-ad8e-1ae200cc81f4",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 0,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 1,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 2,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 2,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 1,
+        "d4a620b8-270a-403b-a946-28b825f99450": 0,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 2,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 2,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 2,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 0,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 2,
+        "24304de5-231b-427a-90cc-d2235819852c": 1,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 1,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 2,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 2,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 1,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 1,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 2,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 1,
+        "7f913d42-a233-4120-8165-59498c809641": 0,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 0,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 0,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 0,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 1,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 0,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 2,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 2,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 0,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 2,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 0
+      }
+    },
+    {
+      "id": "23cc7594-0cdb-44b5-9d5d-69f624a86889",
+      "nombre": "Profesor_04",
+      "id_materia": "6bfe9bcf-38b3-4ff7-8bbf-6982f99993fc",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 2,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 0,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 0,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 0,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 0,
+        "d4a620b8-270a-403b-a946-28b825f99450": 1,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 0,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 2,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 0,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 1,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 2,
+        "24304de5-231b-427a-90cc-d2235819852c": 1,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 0,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 2,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 0,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 2,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 2,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 2,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 1,
+        "7f913d42-a233-4120-8165-59498c809641": 0,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 1,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 1,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 0,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 0,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 0,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 2,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 1,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 1,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 1,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 1
+      }
+    },
+    {
+      "id": "83ad372f-3a2e-484e-893f-c670c6879393",
+      "nombre": "Profesor_05",
+      "id_materia": "2c30521a-aaae-4424-ad6a-6927126cb8d5",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 0,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 2,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 2,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 2,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 0,
+        "d4a620b8-270a-403b-a946-28b825f99450": 0,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 1,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 2,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 1,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 0,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 0,
+        "24304de5-231b-427a-90cc-d2235819852c": 0,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 0,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 2,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 1,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 0,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 1,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 0,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 1,
+        "7f913d42-a233-4120-8165-59498c809641": 1,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 0,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 0,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 1,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 2,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 0,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 0,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 2,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 2,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 0,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 0
+      }
+    },
+    {
+      "id": "dc681533-57b8-49ee-b559-adba7409c66a",
+      "nombre": "Profesor_06",
+      "id_materia": "3e2d19fc-d07b-46a0-9368-118a1e16a365",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 1,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 1,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 0,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 1,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 0,
+        "d4a620b8-270a-403b-a946-28b825f99450": 0,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 1,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 0,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 1,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 1,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 1,
+        "24304de5-231b-427a-90cc-d2235819852c": 1,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 1,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 2,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 2,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 2,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 2,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 2,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 1,
+        "7f913d42-a233-4120-8165-59498c809641": 0,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 0,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 1,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 0,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 0,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 2,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 2,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 2,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 0,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 2,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 1
+      }
+    },
+    {
+      "id": "7744f46d-ae27-4e9e-a6ae-979b14592b6c",
+      "nombre": "Profesor_07",
+      "id_materia": "bff86a64-643c-468c-aadb-9bbd7fb7604a",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 1,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 2,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 2,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 0,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 0,
+        "d4a620b8-270a-403b-a946-28b825f99450": 2,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 0,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 0,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 0,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 2,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 0,
+        "24304de5-231b-427a-90cc-d2235819852c": 2,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 0,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 1,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 0,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 2,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 0,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 2,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 2,
+        "7f913d42-a233-4120-8165-59498c809641": 0,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 2,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 0,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 1,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 2,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 2,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 2,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 2,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 1,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 1,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 0
+      }
+    },
+    {
+      "id": "d6300629-3c79-4fd5-889a-d2a5df7d8a5d",
+      "nombre": "Profesor_08",
+      "id_materia": "e216b018-6a0c-4171-867c-2b1ec1d5d9a1",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 1,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 0,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 2,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 2,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 1,
+        "d4a620b8-270a-403b-a946-28b825f99450": 1,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 1,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 0,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 0,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 1,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 2,
+        "24304de5-231b-427a-90cc-d2235819852c": 2,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 0,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 0,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 2,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 0,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 2,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 1,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 0,
+        "7f913d42-a233-4120-8165-59498c809641": 1,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 0,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 0,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 1,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 1,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 0,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 1,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 2,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 2,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 1,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 2
+      }
+    },
+    {
+      "id": "c056d739-fb56-440a-ae33-915d17672623",
+      "nombre": "Profesor_09",
+      "id_materia": "465b226b-a352-4aba-be42-423184770eb4",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 2,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 1,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 2,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 0,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 0,
+        "d4a620b8-270a-403b-a946-28b825f99450": 1,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 0,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 0,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 2,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 2,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 0,
+        "24304de5-231b-427a-90cc-d2235819852c": 1,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 1,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 2,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 0,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 2,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 1,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 0,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 2,
+        "7f913d42-a233-4120-8165-59498c809641": 2,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 1,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 2,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 1,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 1,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 0,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 0,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 2,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 1,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 1,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 0
+      }
+    },
+    {
+      "id": "a603ce91-eaed-4eeb-9779-bb50a7ddaf38",
+      "nombre": "Profesor_10",
+      "id_materia": "3450f29d-e1ea-4afa-a7e7-41bde6b154c0",
+      "preferencias": {
+        "d4e4e9ee-260a-4d24-9213-75a0ff86e912": 0,
+        "d3a170fe-7a81-495f-94ed-c84003dc56da": 2,
+        "8dbfe966-785c-4a3d-be86-4882d4553dfb": 1,
+        "69dbf497-29a4-43cd-ba18-2de4de69d21b": 0,
+        "d380d194-174b-4e48-b2ec-224ab9656844": 2,
+        "d4a620b8-270a-403b-a946-28b825f99450": 1,
+        "74d60546-a545-40f3-8fc5-2fa13658bb03": 2,
+        "771959e9-0c05-4bbc-aaac-99a314485d8f": 2,
+        "6b2c6a66-7475-4ff9-ad31-72f0013cba8a": 1,
+        "72e2a074-fca0-4f00-b174-7d6ed2b74a9a": 2,
+        "48d0bc1f-19dc-4bc1-95c9-a2317675f7a3": 0,
+        "24304de5-231b-427a-90cc-d2235819852c": 0,
+        "f96d6cb8-8879-422e-be41-165bfa181d1f": 0,
+        "e267c4f7-1ebe-4eee-af32-f5c3b5d15be6": 2,
+        "54eed005-3ef5-44ec-bcab-b50baf950274": 0,
+        "451e24ca-dcf1-4ad2-898a-62a4f5950ef5": 2,
+        "0e4d2e81-033e-41bf-9ded-c6494f4ac455": 0,
+        "36d63d77-88c6-43e3-a27e-bc15a4eeeec1": 1,
+        "60c66419-df6d-4dee-85ad-c1e24b3c7641": 2,
+        "7f913d42-a233-4120-8165-59498c809641": 2,
+        "79ea2180-da09-4b90-b2e5-d6942c06c8ba": 0,
+        "4b5d8e32-fd50-44b8-bd38-2e45f9c7e0f5": 1,
+        "72aeea64-454a-44e8-9be6-d82249c055db": 0,
+        "75dc4e92-6814-4b2f-9148-5e53a87f609a": 0,
+        "c9bca452-ca3b-40e2-84b6-099d5027d35a": 1,
+        "bda4cf4a-974f-46df-89a0-eedf3b01ef04": 1,
+        "7617e0ff-7a32-4166-bea3-f6d72939a693": 0,
+        "2afae95d-8a47-46e7-9e64-75a4bb185431": 1,
+        "5b7d75bf-204f-421d-b361-f51bbd2139eb": 0,
+        "839bf8e6-f863-4172-8b35-f719775461a2": 2
+      }
+    }
+  ],
+  "materias": [
+    {
+      "id": "c5519d4b-7c4c-4f8b-909a-263c781941b5",
+      "nombre": "Cálculo en Varias Variables",
+      "id_profesor": "222f508c-0fc5-4df9-9848-1a024e0eba54",
+      "id_grupos": [
+        "38340d1f-f207-488b-a483-531a743cb6f1",
+        "ae4aec31-f873-4097-b9fc-4d814ccee8c4"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "f21a106d-be3b-42ec-ad25-56f994617e34",
+      "nombre": "Análisis y Diseño de Algoritmos",
+      "id_profesor": "38448c5d-4807-4a1c-b786-8a9495a51ba5",
+      "id_grupos": [
+        "c9f5954d-c0b6-4c05-a9eb-36c57b916c9f",
+        "5ad5c4ad-e398-483a-876b-ac113db1ec70"
+      ],
+      "sesiones_semanales": 2
+    },
+    {
+      "id": "4426853f-cfb7-45dc-ad8e-1ae200cc81f4",
+      "nombre": "Modelos de Datos",
+      "id_profesor": "47c91a76-f8bb-4bbe-ad83-8c6df1bb7a69",
+      "id_grupos": [
+        "856040bd-9944-40f8-b040-7c95de4ebe44",
+        "d1c13964-13db-49f0-b2ee-3e18c4ddc613"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "6bfe9bcf-38b3-4ff7-8bbf-6982f99993fc",
+      "nombre": "Ecuaciones Diferenciales",
+      "id_profesor": "23cc7594-0cdb-44b5-9d5d-69f624a86889",
+      "id_grupos": [
+        "fb8c7be7-2c95-4c72-a053-6bbab6d4578a",
+        "2f49fbae-044a-4a0a-b34a-13018e4d6b1e"
+      ],
+      "sesiones_semanales": 2
+    },
+    {
+      "id": "2c30521a-aaae-4424-ad6a-6927126cb8d5",
+      "nombre": "Estadística",
+      "id_profesor": "83ad372f-3a2e-484e-893f-c670c6879393",
+      "id_grupos": [
+        "52d4117b-dc2b-4006-b147-2def136a0bd9",
+        "d1b910fc-4028-4076-a31b-837b6acf0787"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "3e2d19fc-d07b-46a0-9368-118a1e16a365",
+      "nombre": "Fundamentos de Diseño de Software",
+      "id_profesor": "dc681533-57b8-49ee-b559-adba7409c66a",
+      "id_grupos": [
+        "068fcd09-cf93-4ab5-9a83-49a9f48e4f97",
+        "7b2934ee-ad1c-4a09-a7d8-16323abf6432"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "bff86a64-643c-468c-aadb-9bbd7fb7604a",
+      "nombre": "Estructuras de Datos",
+      "id_profesor": "7744f46d-ae27-4e9e-a6ae-979b14592b6c",
+      "id_grupos": [
+        "b24a71e0-2f5a-4ed4-803f-ce5fdcf4e23f",
+        "b25f6bcc-8b56-4083-b0dc-c9f7828cccc5"
+      ],
+      "sesiones_semanales": 2
+    },
+    {
+      "id": "e216b018-6a0c-4171-867c-2b1ec1d5d9a1",
+      "nombre": "Cálculo Integral",
+      "id_profesor": "d6300629-3c79-4fd5-889a-d2a5df7d8a5d",
+      "id_grupos": [
+        "0e162b87-900a-4e80-94af-81e5b5454ca5",
+        "03252a75-3cb7-4983-832e-3b62e393897d"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "465b226b-a352-4aba-be42-423184770eb4",
+      "nombre": "Álgebra Lineal",
+      "id_profesor": "c056d739-fb56-440a-ae33-915d17672623",
+      "id_grupos": [
+        "ce6d06bb-9df2-44e7-b6ec-7b83118ecae4",
+        "28da94e1-7e8d-4a47-b6ac-3cb8af3e87b5"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "3450f29d-e1ea-4afa-a7e7-41bde6b154c0",
+      "nombre": "Física Mecánica",
+      "id_profesor": "a603ce91-eaed-4eeb-9779-bb50a7ddaf38",
+      "id_grupos": [
+        "ff236b91-3b81-4c23-84f2-cc6d280ceeba",
+        "e90ff69c-776c-465b-bd61-e7128de65f93"
+      ],
+      "sesiones_semanales": 1
+    }
+  ],
+  "grupos": [
+    {
+      "id": "38340d1f-f207-488b-a483-531a743cb6f1",
+      "nombre": "G01",
+      "cantidad_de_estudiantes": 35,
+      "id_materia": "c5519d4b-7c4c-4f8b-909a-263c781941b5"
+    },
+    {
+      "id": "ae4aec31-f873-4097-b9fc-4d814ccee8c4",
+      "nombre": "G02",
+      "cantidad_de_estudiantes": 31,
+      "id_materia": "c5519d4b-7c4c-4f8b-909a-263c781941b5"
+    },
+    {
+      "id": "c9f5954d-c0b6-4c05-a9eb-36c57b916c9f",
+      "nombre": "G03",
+      "cantidad_de_estudiantes": 37,
+      "id_materia": "f21a106d-be3b-42ec-ad25-56f994617e34"
+    },
+    {
+      "id": "5ad5c4ad-e398-483a-876b-ac113db1ec70",
+      "nombre": "G04",
+      "cantidad_de_estudiantes": 30,
+      "id_materia": "f21a106d-be3b-42ec-ad25-56f994617e34"
+    },
+    {
+      "id": "856040bd-9944-40f8-b040-7c95de4ebe44",
+      "nombre": "G05",
+      "cantidad_de_estudiantes": 40,
+      "id_materia": "4426853f-cfb7-45dc-ad8e-1ae200cc81f4"
+    },
+    {
+      "id": "d1c13964-13db-49f0-b2ee-3e18c4ddc613",
+      "nombre": "G06",
+      "cantidad_de_estudiantes": 27,
+      "id_materia": "4426853f-cfb7-45dc-ad8e-1ae200cc81f4"
+    },
+    {
+      "id": "fb8c7be7-2c95-4c72-a053-6bbab6d4578a",
+      "nombre": "G07",
+      "cantidad_de_estudiantes": 12,
+      "id_materia": "6bfe9bcf-38b3-4ff7-8bbf-6982f99993fc"
+    },
+    {
+      "id": "2f49fbae-044a-4a0a-b34a-13018e4d6b1e",
+      "nombre": "G08",
+      "cantidad_de_estudiantes": 32,
+      "id_materia": "6bfe9bcf-38b3-4ff7-8bbf-6982f99993fc"
+    },
+    {
+      "id": "52d4117b-dc2b-4006-b147-2def136a0bd9",
+      "nombre": "G09",
+      "cantidad_de_estudiantes": 37,
+      "id_materia": "2c30521a-aaae-4424-ad6a-6927126cb8d5"
+    },
+    {
+      "id": "d1b910fc-4028-4076-a31b-837b6acf0787",
+      "nombre": "G10",
+      "cantidad_de_estudiantes": 33,
+      "id_materia": "2c30521a-aaae-4424-ad6a-6927126cb8d5"
+    },
+    {
+      "id": "068fcd09-cf93-4ab5-9a83-49a9f48e4f97",
+      "nombre": "G11",
+      "cantidad_de_estudiantes": 15,
+      "id_materia": "3e2d19fc-d07b-46a0-9368-118a1e16a365"
+    },
+    {
+      "id": "7b2934ee-ad1c-4a09-a7d8-16323abf6432",
+      "nombre": "G12",
+      "cantidad_de_estudiantes": 23,
+      "id_materia": "3e2d19fc-d07b-46a0-9368-118a1e16a365"
+    },
+    {
+      "id": "b24a71e0-2f5a-4ed4-803f-ce5fdcf4e23f",
+      "nombre": "G13",
+      "cantidad_de_estudiantes": 11,
+      "id_materia": "bff86a64-643c-468c-aadb-9bbd7fb7604a"
+    },
+    {
+      "id": "b25f6bcc-8b56-4083-b0dc-c9f7828cccc5",
+      "nombre": "G14",
+      "cantidad_de_estudiantes": 28,
+      "id_materia": "bff86a64-643c-468c-aadb-9bbd7fb7604a"
+    },
+    {
+      "id": "0e162b87-900a-4e80-94af-81e5b5454ca5",
+      "nombre": "G15",
+      "cantidad_de_estudiantes": 17,
+      "id_materia": "e216b018-6a0c-4171-867c-2b1ec1d5d9a1"
+    },
+    {
+      "id": "03252a75-3cb7-4983-832e-3b62e393897d",
+      "nombre": "G16",
+      "cantidad_de_estudiantes": 18,
+      "id_materia": "e216b018-6a0c-4171-867c-2b1ec1d5d9a1"
+    },
+    {
+      "id": "ce6d06bb-9df2-44e7-b6ec-7b83118ecae4",
+      "nombre": "G17",
+      "cantidad_de_estudiantes": 31,
+      "id_materia": "465b226b-a352-4aba-be42-423184770eb4"
+    },
+    {
+      "id": "28da94e1-7e8d-4a47-b6ac-3cb8af3e87b5",
+      "nombre": "G18",
+      "cantidad_de_estudiantes": 36,
+      "id_materia": "465b226b-a352-4aba-be42-423184770eb4"
+    },
+    {
+      "id": "ff236b91-3b81-4c23-84f2-cc6d280ceeba",
+      "nombre": "G19",
+      "cantidad_de_estudiantes": 20,
+      "id_materia": "3450f29d-e1ea-4afa-a7e7-41bde6b154c0"
+    },
+    {
+      "id": "e90ff69c-776c-465b-bd61-e7128de65f93",
+      "nombre": "G20",
+      "cantidad_de_estudiantes": 34,
+      "id_materia": "3450f29d-e1ea-4afa-a7e7-41bde6b154c0"
+    }
+  ]
+}

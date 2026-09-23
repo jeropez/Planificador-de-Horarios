@@ -8,6 +8,6 @@ class Bloque:
     """
 
     id: UUID
+    dia: str
     hora_inicio: str
     hora_fin: str
-    

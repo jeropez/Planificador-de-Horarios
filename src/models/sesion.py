@@ -9,4 +9,4 @@ class Sesion:
 
     id: UUID
     id_materia: UUID
-    
+    id_grupo: UUID
