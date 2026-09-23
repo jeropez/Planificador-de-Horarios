@@ -70,44 +70,16 @@
       "id": "S01",
       "capacidad": 30,
       "disponibilidad": [
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ]
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1]
       ]
     },
     {
       "id": "S02",
       "capacidad": 50,
       "disponibilidad": [
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ]
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1]
       ]
     }
   ],
@@ -118,22 +90,8 @@
       "materia_id": "M01",
       "perfil_referencia": "indiferente",
       "preferencias": [
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        [
-          0,
-          1,
-          1,
-          1,
-          1,
-          1
-        ]
+        [1, 1, 1, 1, 1, 1],
+        [0, 1, 1, 1, 1, 1]
       ]
     },
     {
@@ -142,22 +100,8 @@
       "materia_id": "M02",
       "perfil_referencia": "manana",
       "preferencias": [
-        [
-          2,
-          0,
-          2,
-          0,
-          0,
-          0
-        ],
-        [
-          2,
-          2,
-          1,
-          0,
-          0,
-          0
-        ]
+        [2, 0, 2, 0, 0, 0],
+        [2, 2, 1, 0, 0, 0]
       ]
     },
     {
@@ -166,22 +110,8 @@
       "materia_id": "M03",
       "perfil_referencia": "mixto",
       "preferencias": [
-        [
-          1,
-          2,
-          1,
-          2,
-          2,
-          2
-        ],
-        [
-          1,
-          2,
-          1,
-          1,
-          2,
-          0
-        ]
+        [1, 2, 1, 2, 2, 2],
+        [1, 2, 1, 1, 2, 0]
       ]
     },
     {
@@ -190,22 +120,8 @@
       "materia_id": "M04",
       "perfil_referencia": "mixto",
       "preferencias": [
-        [
-          1,
-          2,
-          1,
-          1,
-          2,
-          0
-        ],
-        [
-          1,
-          2,
-          0,
-          1,
-          2,
-          2
-        ]
+        [1, 2, 1, 1, 2, 0],
+        [1, 2, 0, 1, 2, 2]
       ]
     }
   ],
@@ -226,36 +142,28 @@
       "id": "M01",
       "nombre": "Ingles Tecnico",
       "profesor_id": "P01",
-      "grupos": [
-        "G01"
-      ],
+      "grupos": ["G01"],
       "sesiones_semanales": 1
     },
     {
       "id": "M02",
       "nombre": "Bases de Datos",
       "profesor_id": "P02",
-      "grupos": [
-        "G01"
-      ],
+      "grupos": ["G01"],
       "sesiones_semanales": 2
     },
     {
       "id": "M03",
       "nombre": "Computacion Grafica",
       "profesor_id": "P03",
-      "grupos": [
-        "G02"
-      ],
+      "grupos": ["G02"],
       "sesiones_semanales": 1
     },
     {
       "id": "M04",
       "nombre": "Teoria de la Computacion",
       "profesor_id": "P04",
-      "grupos": [
-        "G02"
-      ],
+      "grupos": ["G02"],
       "sesiones_semanales": 1
     }
   ]

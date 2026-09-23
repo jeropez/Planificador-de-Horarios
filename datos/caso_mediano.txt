@@ -71,120 +71,36 @@
       "id": "S01",
       "capacidad": 25,
       "disponibilidad": [
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ]
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1]
       ]
     },
     {
       "id": "S02",
       "capacidad": 40,
       "disponibilidad": [
-        [
-          1,
-          1,
-          1,
-          0,
-          1,
-          1
-        ],
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          0
-        ],
-        [
-          1,
-          0,
-          1,
-          1,
-          1,
-          1
-        ]
+        [1, 1, 1, 0, 1, 1],
+        [1, 1, 1, 1, 1, 0],
+        [1, 0, 1, 1, 1, 1]
       ]
     },
     {
       "id": "S03",
       "capacidad": 55,
       "disponibilidad": [
-        [
-          1,
-          1,
-          0,
-          1,
-          1,
-          1
-        ],
-        [
-          1,
-          1,
-          1,
-          1,
-          0,
-          1
-        ],
-        [
-          1,
-          1,
-          1,
-          0,
-          1,
-          1
-        ]
+        [1, 1, 0, 1, 1, 1],
+        [1, 1, 1, 1, 0, 1],
+        [1, 1, 1, 0, 1, 1]
       ]
     },
     {
       "id": "S04",
       "capacidad": 70,
       "disponibilidad": [
-        [
-          1,
-          1,
-          1,
-          1,
-          0,
-          1
-        ],
-        [
-          0,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        [
-          1,
-          1,
-          0,
-          1,
-          1,
-          1
-        ]
+        [1, 1, 1, 1, 0, 1],
+        [0, 1, 1, 1, 1, 1],
+        [1, 1, 0, 1, 1, 1]
       ]
     }
   ],
@@ -195,30 +111,9 @@
       "materia_id": "M01",
       "perfil_referencia": "manana",
       "preferencias": [
-        [
-          2,
-          2,
-          1,
-          0,
-          1,
-          2
-        ],
-        [
-          2,
-          1,
-          0,
-          1,
-          2,
-          2
-        ],
-        [
-          1,
-          0,
-          1,
-          2,
-          2,
-          1
-        ]
+        [2, 2, 1, 0, 1, 2],
+        [2, 1, 0, 1, 2, 2],
+        [1, 0, 1, 2, 2, 1]
       ]
     },
     {
@@ -227,30 +122,9 @@
       "materia_id": "M02",
       "perfil_referencia": "tarde",
       "preferencias": [
-        [
-          2,
-          1,
-          0,
-          1,
-          2,
-          2
-        ],
-        [
-          1,
-          0,
-          1,
-          2,
-          2,
-          1
-        ],
-        [
-          0,
-          1,
-          2,
-          2,
-          1,
-          0
-        ]
+        [2, 1, 0, 1, 2, 2],
+        [1, 0, 1, 2, 2, 1],
+        [0, 1, 2, 2, 1, 0]
       ]
     },
     {
@@ -259,30 +133,9 @@
       "materia_id": "M03",
       "perfil_referencia": "mixto",
       "preferencias": [
-        [
-          1,
-          0,
-          1,
-          2,
-          2,
-          1
-        ],
-        [
-          0,
-          1,
-          2,
-          2,
-          1,
-          0
-        ],
-        [
-          1,
-          2,
-          2,
-          1,
-          0,
-          1
-        ]
+        [1, 0, 1, 2, 2, 1],
+        [0, 1, 2, 2, 1, 0],
+        [1, 2, 2, 1, 0, 1]
       ]
     },
     {
@@ -291,30 +144,9 @@
       "materia_id": "M04",
       "perfil_referencia": "manana",
       "preferencias": [
-        [
-          0,
-          1,
-          2,
-          2,
-          1,
-          0
-        ],
-        [
-          1,
-          2,
-          2,
-          1,
-          0,
-          1
-        ],
-        [
-          2,
-          2,
-          1,
-          0,
-          1,
-          2
-        ]
+        [0, 1, 2, 2, 1, 0],
+        [1, 2, 2, 1, 0, 1],
+        [2, 2, 1, 0, 1, 2]
       ]
     },
     {
@@ -323,30 +155,9 @@
       "materia_id": "M05",
       "perfil_referencia": "mixto",
       "preferencias": [
-        [
-          1,
-          2,
-          2,
-          1,
-          0,
-          1
-        ],
-        [
-          2,
-          2,
-          1,
-          0,
-          1,
-          2
-        ],
-        [
-          2,
-          1,
-          0,
-          1,
-          2,
-          2
-        ]
+        [1, 2, 2, 1, 0, 1],
+        [2, 2, 1, 0, 1, 2],
+        [2, 1, 0, 1, 2, 2]
       ]
     },
     {
@@ -355,30 +166,9 @@
       "materia_id": "M06",
       "perfil_referencia": "tarde",
       "preferencias": [
-        [
-          2,
-          2,
-          1,
-          0,
-          1,
-          2
-        ],
-        [
-          2,
-          1,
-          0,
-          1,
-          2,
-          2
-        ],
-        [
-          1,
-          0,
-          1,
-          2,
-          2,
-          1
-        ]
+        [2, 2, 1, 0, 1, 2],
+        [2, 1, 0, 1, 2, 2],
+        [1, 0, 1, 2, 2, 1]
       ]
     },
     {
@@ -387,30 +177,9 @@
       "materia_id": "M07",
       "perfil_referencia": "mixto",
       "preferencias": [
-        [
-          2,
-          1,
-          0,
-          1,
-          2,
-          2
-        ],
-        [
-          1,
-          0,
-          1,
-          2,
-          2,
-          1
-        ],
-        [
-          0,
-          1,
-          2,
-          2,
-          1,
-          0
-        ]
+        [2, 1, 0, 1, 2, 2],
+        [1, 0, 1, 2, 2, 1],
+        [0, 1, 2, 2, 1, 0]
       ]
     },
     {
@@ -419,30 +188,9 @@
       "materia_id": "M08",
       "perfil_referencia": "manana",
       "preferencias": [
-        [
-          1,
-          0,
-          1,
-          2,
-          2,
-          1
-        ],
-        [
-          0,
-          1,
-          2,
-          2,
-          1,
-          0
-        ],
-        [
-          1,
-          2,
-          2,
-          1,
-          0,
-          1
-        ]
+        [1, 0, 1, 2, 2, 1],
+        [0, 1, 2, 2, 1, 0],
+        [1, 2, 2, 1, 0, 1]
       ]
     }
   ],
@@ -473,76 +221,56 @@
       "id": "M01",
       "nombre": "Ingles Tecnico",
       "profesor_id": "P01",
-      "grupos": [
-        "G01",
-        "G02"
-      ],
+      "grupos": ["G01", "G02"],
       "sesiones_semanales": 1
     },
     {
       "id": "M02",
       "nombre": "Bases de Datos",
       "profesor_id": "P02",
-      "grupos": [
-        "G01"
-      ],
+      "grupos": ["G01"],
       "sesiones_semanales": 2
     },
     {
       "id": "M03",
       "nombre": "Computacion Grafica",
       "profesor_id": "P03",
-      "grupos": [
-        "G02",
-        "G03"
-      ],
+      "grupos": ["G02", "G03"],
       "sesiones_semanales": 1
     },
     {
       "id": "M04",
       "nombre": "Teoria de la Computacion",
       "profesor_id": "P04",
-      "grupos": [
-        "G03"
-      ],
+      "grupos": ["G03"],
       "sesiones_semanales": 1
     },
     {
       "id": "M05",
       "nombre": "Algoritmos",
       "profesor_id": "P05",
-      "grupos": [
-        "G01",
-        "G03"
-      ],
+      "grupos": ["G01", "G03"],
       "sesiones_semanales": 1
     },
     {
       "id": "M06",
       "nombre": "Estadistica",
       "profesor_id": "P06",
-      "grupos": [
-        "G02",
-        "G04"
-      ],
+      "grupos": ["G02", "G04"],
       "sesiones_semanales": 1
     },
     {
       "id": "M07",
       "nombre": "Modelos de Datos",
       "profesor_id": "P07",
-      "grupos": [
-        "G04"
-      ],
+      "grupos": ["G04"],
       "sesiones_semanales": 1
     },
     {
       "id": "M08",
       "nombre": "Fundamentos de Diseño",
       "profesor_id": "P08",
-      "grupos": [
-        "G04"
-      ],
+      "grupos": ["G04"],
       "sesiones_semanales": 1
     }
   ]
