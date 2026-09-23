@@ -1,0 +1,1091 @@
+{
+  "metadatos": {
+    "nombre": "Caso grande",
+    "tamano": "grande",
+    "descripcion": "5 dias, 6 salones, 12 materias y 8 grupos. Incluye materias compartidas, materias con dos sesiones semanales y disponibilidades parciales para producir un espacio de busqueda mucho mayor.",
+    "semilla": 306,
+    "convenciones": {
+      "indexacion_matrices": "matriz[dia][bloque]; el dia y el bloque se indexan desde 0 segun calendario.dias y calendario.bloques",
+      "disponibilidad": "1 = salon disponible, 0 = no disponible (restriccion R2)",
+      "preferencias": "0 = evitar, 1 = indiferente, 2 = preferida",
+      "sesion": "cada sesion es una clase de 2 horas que ocupa exactamente un bloque; una materia puede ser vista por varios grupos y se genera una sesion por grupo y por sesion_semanal"
+    },
+    "resumen": {
+      "n_materias": 12,
+      "n_profesores": 12,
+      "n_grupos": 8,
+      "n_salones": 6,
+      "n_dias": 5,
+      "n_bloques_por_dia": 6,
+      "n_franjas_totales": 30,
+      "total_sesiones_a_programar": 26,
+      "horas_semanales_totales": 52,
+      "cupos_salon_franja_disponibles": 156,
+      "ocupacion_teorica_minima": 0.167
+    }
+  },
+  "calendario": {
+    "dias": [
+      "Lunes",
+      "Martes",
+      "Miercoles",
+      "Jueves",
+      "Viernes"
+    ],
+    "duracion_clase_horas": 2,
+    "hora_inicio_jornada": "08:00",
+    "hora_fin_jornada": "20:00",
+    "bloques": [
+      {
+        "id": 0,
+        "inicio": "08:00",
+        "fin": "10:00"
+      },
+      {
+        "id": 1,
+        "inicio": "10:00",
+        "fin": "12:00"
+      },
+      {
+        "id": 2,
+        "inicio": "12:00",
+        "fin": "14:00"
+      },
+      {
+        "id": 3,
+        "inicio": "14:00",
+        "fin": "16:00"
+      },
+      {
+        "id": 4,
+        "inicio": "16:00",
+        "fin": "18:00"
+      },
+      {
+        "id": 5,
+        "inicio": "18:00",
+        "fin": "20:00"
+      }
+    ]
+  },
+  "salones": [
+    {
+      "id": "S01",
+      "capacidad": 25,
+      "disponibilidad": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "S02",
+      "capacidad": 35,
+      "disponibilidad": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "S03",
+      "capacidad": 45,
+      "disponibilidad": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "S04",
+      "capacidad": 55,
+      "disponibilidad": [
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "S05",
+      "capacidad": 70,
+      "disponibilidad": [
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "S06",
+      "capacidad": 100,
+      "disponibilidad": [
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "profesores": [
+    {
+      "id": "P01",
+      "nombre": "Profesor 01",
+      "materia_id": "M01",
+      "perfil_referencia": "tarde",
+      "preferencias": [
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "P02",
+      "nombre": "Profesor 02",
+      "materia_id": "M02",
+      "perfil_referencia": "mixto",
+      "preferencias": [
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "P03",
+      "nombre": "Profesor 03",
+      "materia_id": "M03",
+      "perfil_referencia": "manana",
+      "preferencias": [
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "P04",
+      "nombre": "Profesor 04",
+      "materia_id": "M04",
+      "perfil_referencia": "tarde",
+      "preferencias": [
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "P05",
+      "nombre": "Profesor 05",
+      "materia_id": "M05",
+      "perfil_referencia": "mixto",
+      "preferencias": [
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "P06",
+      "nombre": "Profesor 06",
+      "materia_id": "M06",
+      "perfil_referencia": "manana",
+      "preferencias": [
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "P07",
+      "nombre": "Profesor 07",
+      "materia_id": "M07",
+      "perfil_referencia": "tarde",
+      "preferencias": [
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "P08",
+      "nombre": "Profesor 08",
+      "materia_id": "M08",
+      "perfil_referencia": "mixto",
+      "preferencias": [
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "P09",
+      "nombre": "Profesor 09",
+      "materia_id": "M09",
+      "perfil_referencia": "manana",
+      "preferencias": [
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "P10",
+      "nombre": "Profesor 10",
+      "materia_id": "M10",
+      "perfil_referencia": "tarde",
+      "preferencias": [
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "P11",
+      "nombre": "Profesor 11",
+      "materia_id": "M11",
+      "perfil_referencia": "mixto",
+      "preferencias": [
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "P12",
+      "nombre": "Profesor 12",
+      "materia_id": "M12",
+      "perfil_referencia": "manana",
+      "preferencias": [
+        [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ]
+      ]
+    }
+  ],
+  "grupos": [
+    {
+      "id": "G01",
+      "nombre": "Ingenieria de Sistemas - Grupo 1",
+      "cantidad_estudiantes": 46
+    },
+    {
+      "id": "G02",
+      "nombre": "Ingenieria de Sistemas - Grupo 2",
+      "cantidad_estudiantes": 38
+    },
+    {
+      "id": "G03",
+      "nombre": "Ingenieria de Sistemas - Grupo 3",
+      "cantidad_estudiantes": 52
+    },
+    {
+      "id": "G04",
+      "nombre": "Ingenieria de Sistemas - Grupo 4",
+      "cantidad_estudiantes": 30
+    },
+    {
+      "id": "G05",
+      "nombre": "Ingenieria de Sistemas - Grupo 5",
+      "cantidad_estudiantes": 24
+    },
+    {
+      "id": "G06",
+      "nombre": "Ingenieria de Sistemas - Grupo 6",
+      "cantidad_estudiantes": 41
+    },
+    {
+      "id": "G07",
+      "nombre": "Ingenieria de Sistemas - Grupo 7",
+      "cantidad_estudiantes": 28
+    },
+    {
+      "id": "G08",
+      "nombre": "Ingenieria de Sistemas - Grupo 8",
+      "cantidad_estudiantes": 35
+    }
+  ],
+  "materias": [
+    {
+      "id": "M01",
+      "nombre": "Algebra",
+      "profesor_id": "P01",
+      "grupos": [
+        "G01",
+        "G02"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M02",
+      "nombre": "Calculo",
+      "profesor_id": "P02",
+      "grupos": [
+        "G01",
+        "G03"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M03",
+      "nombre": "Programacion",
+      "profesor_id": "P03",
+      "grupos": [
+        "G01",
+        "G04"
+      ],
+      "sesiones_semanales": 2
+    },
+    {
+      "id": "M04",
+      "nombre": "Bases de Datos",
+      "profesor_id": "P04",
+      "grupos": [
+        "G02",
+        "G05"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M05",
+      "nombre": "Algoritmos",
+      "profesor_id": "P05",
+      "grupos": [
+        "G02",
+        "G06"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M06",
+      "nombre": "Estadistica",
+      "profesor_id": "P06",
+      "grupos": [
+        "G03",
+        "G07"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M07",
+      "nombre": "Computacion Grafica",
+      "profesor_id": "P07",
+      "grupos": [
+        "G03",
+        "G08"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M08",
+      "nombre": "Modelos de Datos",
+      "profesor_id": "P08",
+      "grupos": [
+        "G04",
+        "G06"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M09",
+      "nombre": "Sistemas Operativos",
+      "profesor_id": "P09",
+      "grupos": [
+        "G04",
+        "G07"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M10",
+      "nombre": "Redes",
+      "profesor_id": "P10",
+      "grupos": [
+        "G05",
+        "G08"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M11",
+      "nombre": "Ingenieria de Software",
+      "profesor_id": "P11",
+      "grupos": [
+        "G06",
+        "G07"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M12",
+      "nombre": "Ingles Tecnico",
+      "profesor_id": "P12",
+      "grupos": [
+        "G05",
+        "G08"
+      ],
+      "sesiones_semanales": 1
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "metadatos": {
+    "nombre": "Caso pequeño",
+    "tamano": "pequeño",
+    "descripcion": "2 dias, 2 salones, 4 materias y 2 grupos. Pensado para que la fuerza bruta pura termine en segundos.",
+    "semilla": 104,
+    "convenciones": {
+      "indexacion_matrices": "matriz[dia][bloque]; el dia y el bloque se indexan desde 0 segun calendario.dias y calendario.bloques",
+      "disponibilidad": "1 = salon disponible, 0 = no disponible (restriccion R2)",
+      "preferencias": "0 = evitar, 1 = indiferente, 2 = preferida",
+      "sesion": "cada sesion es una clase de 2 horas que ocupa exactamente un bloque; una materia puede ser vista por varios grupos y se genera una sesion por grupo y por sesion_semanal"
+    },
+    "resumen": {
+      "n_materias": 4,
+      "n_profesores": 4,
+      "n_grupos": 2,
+      "n_salones": 2,
+      "n_dias": 2,
+      "n_bloques_por_dia": 6,
+      "n_franjas_totales": 12,
+      "total_sesiones_a_programar": 5,
+      "horas_semanales_totales": 10,
+      "cupos_salon_franja_disponibles": 24,
+      "ocupacion_teorica_minima": 0.208
+    }
+  },
+  "calendario": {
+    "dias": [
+      "Lunes",
+      "Martes"
+    ],
+    "duracion_clase_horas": 2,
+    "hora_inicio_jornada": "08:00",
+    "hora_fin_jornada": "20:00",
+    "bloques": [
+      {
+        "id": 0,
+        "inicio": "08:00",
+        "fin": "10:00"
+      },
+      {
+        "id": 1,
+        "inicio": "10:00",
+        "fin": "12:00"
+      },
+      {
+        "id": 2,
+        "inicio": "12:00",
+        "fin": "14:00"
+      },
+      {
+        "id": 3,
+        "inicio": "14:00",
+        "fin": "16:00"
+      },
+      {
+        "id": 4,
+        "inicio": "16:00",
+        "fin": "18:00"
+      },
+      {
+        "id": 5,
+        "inicio": "18:00",
+        "fin": "20:00"
+      }
+    ]
+  },
+  "salones": [
+    {
+      "id": "S01",
+      "capacidad": 30,
+      "disponibilidad": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "S02",
+      "capacidad": 50,
+      "disponibilidad": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "profesores": [
+    {
+      "id": "P01",
+      "nombre": "Luisa Salazar",
+      "materia_id": "M01",
+      "perfil_referencia": "indiferente",
+      "preferencias": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "P02",
+      "nombre": "Claudia Ospina",
+      "materia_id": "M02",
+      "perfil_referencia": "manana",
+      "preferencias": [
+        [
+          2,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "P03",
+      "nombre": "Sara Montoya",
+      "materia_id": "M03",
+      "perfil_referencia": "mixto",
+      "preferencias": [
+        [
+          1,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "P04",
+      "nombre": "Hector Cardona",
+      "materia_id": "M04",
+      "perfil_referencia": "mixto",
+      "preferencias": [
+        [
+          1,
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          2
+        ]
+      ]
+    }
+  ],
+  "grupos": [
+    {
+      "id": "G01",
+      "nombre": "Ingenieria de Sistemas - Grupo 1",
+      "cantidad_estudiantes": 42
+    },
+    {
+      "id": "G02",
+      "nombre": "Ingenieria de Sistemas - Grupo 2",
+      "cantidad_estudiantes": 25
+    }
+  ],
+  "materias": [
+    {
+      "id": "M01",
+      "nombre": "Ingles Tecnico",
+      "profesor_id": "P01",
+      "grupos": [
+        "G01"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M02",
+      "nombre": "Bases de Datos",
+      "profesor_id": "P02",
+      "grupos": [
+        "G01"
+      ],
+      "sesiones_semanales": 2
+    },
+    {
+      "id": "M03",
+      "nombre": "Computacion Grafica",
+      "profesor_id": "P03",
+      "grupos": [
+        "G02"
+      ],
+      "sesiones_semanales": 1
+    },
+    {
+      "id": "M04",
+      "nombre": "Teoria de la Computacion",
+      "profesor_id": "P04",
+      "grupos": [
+        "G02"
+      ],
+      "sesiones_semanales": 1
+    }
+  ]
+}
