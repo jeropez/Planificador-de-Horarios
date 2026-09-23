@@ -55,9 +55,9 @@ SEMILLA = 42
 
 CONFIGURACIONES = {
     "caso_pequeno": {
-        "materias": 4,
+        "materias": 2,
         "grupos_por_materia": 1,
-        "sesiones_semanales_opciones": [1, 2],
+        "sesiones_semanales_opciones": [1],
         "salones": 2,
         "capacidad_salon_min": 20,
         "capacidad_salon_max": 40,
@@ -65,20 +65,20 @@ CONFIGURACIONES = {
         "estudiantes_max": 35,
     },
     "caso_mediano": {
-        "materias": 10,
-        "grupos_por_materia": 2,
-        "sesiones_semanales_opciones": [1, 2],
-        "salones": 4,
+        "materias": 3,
+        "grupos_por_materia": 1,
+        "sesiones_semanales_opciones": [1],
+        "salones": 2,
         "capacidad_salon_min": 20,
         "capacidad_salon_max": 45,
         "estudiantes_min": 10,
         "estudiantes_max": 40,
     },
     "caso_grande": {
-        "materias": 25,
-        "grupos_por_materia": 3,
-        "sesiones_semanales_opciones": [2],
-        "salones": 8,
+        "materias": 4,
+        "grupos_por_materia": 1,
+        "sesiones_semanales_opciones": [1],
+        "salones": 2,
         "capacidad_salon_min": 20,
         "capacidad_salon_max": 50,
         "estudiantes_min": 10,
@@ -105,7 +105,7 @@ def generar_bloques():
 
 def generar_salones(cantidad, cap_min, cap_max):
     """Crea salones con id tipo '1-103', '7-209', '13-310', etc."""
-    
+
     numeros_disponibles = [
         piso * 100 + decena
         for piso in (1, 2, 3)
