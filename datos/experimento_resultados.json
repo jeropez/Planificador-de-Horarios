@@ -1,0 +1,34 @@
+[
+  {
+    "caso": "exp_s1",
+    "S": 1,
+    "combinaciones_probadas": 60,
+    "soluciones_encontradas": 60,
+    "calidad": 1.0,
+    "tiempo_s": 0.0006985359998452623
+  },
+  {
+    "caso": "caso_pequeno",
+    "S": 2,
+    "combinaciones_probadas": 3600,
+    "soluciones_encontradas": 3540,
+    "calidad": 1.0,
+    "tiempo_s": 0.07451331600009325
+  },
+  {
+    "caso": "caso_mediano",
+    "S": 3,
+    "combinaciones_probadas": 216000,
+    "soluciones_encontradas": 205320,
+    "calidad": 1.0,
+    "tiempo_s": 5.47121105999986
+  },
+  {
+    "caso": "caso_grande",
+    "S": 4,
+    "combinaciones_probadas": 12960000,
+    "soluciones_encontradas": 11703240,
+    "calidad": 1.0,
+    "tiempo_s": 438.25143516499975
+  }
+]
