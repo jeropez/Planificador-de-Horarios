@@ -26,10 +26,10 @@
     backtracking: {
       nombre: "Backtracking", var: "--bt",
       desc: "Recorre el árbol de decisiones con poda: restricciones, forward checking y MRV.",
-      tiempo: "O((B·A)^S · S) peor caso", espacio: "O(S)",
+      tiempo: "O((B·A)^S · S·B·A) peor caso", espacio: "O(S · (B·A + S))",
       optimo: ["si", "Sí, calidad completa"], limite: "S ≤ 4 (óptimo)",
       trabajo: "nodos_explorados", trabajoNombre: "Nodos explorados",
-      ops: (S) => Math.pow(60, S) * S,
+      ops: (S) => Math.pow(60, S) * S * 60,
     },
     dinamica: {
       nombre: "Programación dinámica", var: "--dp",
@@ -39,8 +39,17 @@
       trabajo: "estados_explorados", trabajoNombre: "Estados (bloque, máscara)",
       ops: (S) => 30 * Math.pow(3, S),
     },
+    divide_venceras: {
+      nombre: "Divide y vencerás", var: "--dv",
+      desc: "Resuelve cada materia por separado de forma exacta y combina los horarios reparando choques de salón.",
+      tiempo: "O(M · C(B, s) · s²)", espacio: "O(M · K · s)",
+      optimo: ["parcial", "Certificado con cota superior"], limite: "s ≲ 4 por materia",
+      trabajo: "combinaciones_evaluadas", trabajoNombre: "Combinaciones de bloques",
+      // M = S/2 materias de s = 2 sesiones, como en el benchmark: C(30, 2) = 435.
+      ops: (S) => (S / 2) * 435 * 4 + S * 30,
+    },
   };
-  const ORDEN_TEC = ["fuerza_bruta", "greedy", "backtracking", "dinamica"];
+  const ORDEN_TEC = ["fuerza_bruta", "greedy", "backtracking", "dinamica", "divide_venceras"];
 
   const DIAS = [
     { id: "lunes", corto: "Lun", nombre: "Lunes" },
@@ -223,6 +232,7 @@
         <div class="kpi-etiqueta">Calidad del horario</div>
         <div class="kpi-valor">${s.metricas.calidad.toFixed(3)} <small>/ 1</small></div>
         <div class="barra-prog"><i style="width:${s.metricas.calidad * 100}%"></i></div>
+        ${s.metricas.optimo_garantizado === true ? `<div class="kpi-nota" style="margin-top:6px">✅ Óptimo certificado por cota superior</div>` : ""}
       </div>
       <div class="kpi" style="--c:var(--pref-2)">
         <div class="kpi-etiqueta">Preferencia profesores</div>
@@ -761,15 +771,16 @@
       ["Idea", (t) => TEC[t].desc],
       ["Complejidad temporal", (t) => `<span class="mono">${TEC[t].tiempo}</span>`],
       ["Complejidad espacial", (t) => `<span class="mono">${TEC[t].espacio}</span>`],
-      ["¿Qué optimiza?", (t) => ({ fuerza_bruta: "Calidad completa", greedy: "Calidad completa (decisión local)", backtracking: "Calidad completa", dinamica: "Preferencia (R1–R6)" })[t]],
+      ["¿Qué optimiza?", (t) => ({ fuerza_bruta: "Calidad completa", greedy: "Calidad completa (decisión local)", backtracking: "Calidad completa", dinamica: "Preferencia (R1–R6)", divide_venceras: "Calidad completa (exacta por materia)" })[t]],
       ["¿Garantiza el óptimo?", (t) => `<span class="${TEC[t].optimo[0]}">${TEC[t].optimo[1]}</span>`],
-      ["¿Retrocede?", (t) => ({ fuerza_bruta: "No (lo prueba todo)", greedy: "No", backtracking: "Sí", dinamica: "No (reutiliza subproblemas)" })[t]],
+      ["¿Retrocede?", (t) => ({ fuerza_bruta: "No (lo prueba todo)", greedy: "No", backtracking: "Sí", dinamica: "No (reutiliza subproblemas)", divide_venceras: "Solo al combinar (reparaciones)" })[t]],
       ["Límite práctico", (t) => TEC[t].limite],
       ["Cuándo usarla", (t) => ({
         fuerza_bruta: "Instancias diminutas, para validar a las demás.",
         greedy: "Respuesta inmediata con buena calidad en instancias grandes.",
         backtracking: "Óptimo exacto en instancias pequeñas, con poda.",
         dinamica: "Óptimo de preferencia en instancias medianas (S ≲ 14).",
+        divide_venceras: "Muchas materias con pocas sesiones cada una y salones suficientes.",
       })[t]],
     ];
     $("#tabla-comparativa").innerHTML =
@@ -783,7 +794,8 @@
     $("#conclusiones").innerHTML = `
       <div class="conclusion"><h4>⚡ La explosión combinatoria es real</h4><p>Cada sesión adicional multiplica por 60 el trabajo de la fuerza bruta. Con S = 4 ya tarda minutos; con S = 6 tardaría meses.</p></div>
       <div class="conclusion"><h4>🧠 La DP cambia la base del exponente</h4><p>Pasar de 60<sup>S</sup> a 3<sup>S</sup> la hace ${acel}× más rápida en S = 4 y le permite llegar a S ≈ 14 con el óptimo de preferencia.</p></div>
-      <div class="conclusion"><h4>⚖️ Rapidez y calidad no siempre van juntas</h4><p>Greedy es la más rápida y en los casos multisesión obtiene mejor calidad completa que la DP, pero no garantiza el óptimo. La DP gana en preferencia porque es lo único que optimiza.</p></div>`;
+      <div class="conclusion"><h4>⚖️ Rapidez y calidad no siempre van juntas</h4><p>Greedy es muy rápida y en los casos multisesión obtiene mejor calidad completa que la DP, pero no garantiza el óptimo. La DP gana en preferencia porque es lo único que optimiza.</p></div>
+      <div class="conclusion"><h4>✂️ Divide y vencerás aprovecha la estructura</h4><p>Materias distintas no comparten profesor, grupo ni pares de calidad. Resolver cada una por separado baja el exponente de S a las sesiones de una materia, y una cota superior permite certificar el óptimo, incluso con S = 12.</p></div>`;
   }
 
   function renderAnalisis() {

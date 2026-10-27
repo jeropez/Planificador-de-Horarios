@@ -1,0 +1,431 @@
+{
+  "caso": "caso_mediano",
+  "tecnica": "divide_venceras",
+  "sesiones": 3,
+  "tiempo_s": 0.000198,
+  "metricas": {
+    "calidad": 1.0,
+    "completa": true,
+    "subproblemas": 3,
+    "combinaciones_evaluadas": 90,
+    "reparaciones": 0,
+    "ajustes_salones": 0,
+    "cota_superior": 1.0,
+    "optimo_garantizado": true
+  },
+  "asignaciones": [
+    {
+      "materia": "Análisis y Diseño de Algoritmos",
+      "profesor": "Profesor_02",
+      "grupo": "G02",
+      "dia": "martes",
+      "franja": "06:00-08:00",
+      "salon": "13-109",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Modelos de Datos",
+      "profesor": "Profesor_03",
+      "grupo": "G03",
+      "dia": "martes",
+      "franja": "08:00-10:00",
+      "salon": "13-109",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Cálculo en Varias Variables",
+      "profesor": "Profesor_01",
+      "grupo": "G01",
+      "dia": "martes",
+      "franja": "10:00-12:00",
+      "salon": "13-109",
+      "preferencia_profesor": 2
+    }
+  ],
+  "horario_por_salon": {
+    "13-109": [
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          "Análisis y Diseño de Algoritmos",
+          "Profesor_02",
+          "G02",
+          "06:00-08:00"
+        ],
+        [
+          "Modelos de Datos",
+          "Profesor_03",
+          "G03",
+          "08:00-10:00"
+        ],
+        [
+          "Cálculo en Varias Variables",
+          "Profesor_01",
+          "G01",
+          "10:00-12:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    ],
+    "14-107": [
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 """
 Exporta el horario generado por cada técnica a JSON.
 
-Para cada caso de `datos/` corre fuerza bruta, greedy, backtracking y
-programación dinámica, y escribe:
+Para cada caso de `datos/` corre fuerza bruta, greedy, backtracking,
+programación dinámica y divide y vencerás, y escribe:
 
     datos/salidas/<caso>/<tecnica>.json
 
@@ -13,6 +13,7 @@ en el mismo formato de `salida.formatear_horario`.
 Uso (desde la raíz del proyecto):
     python -m src.exportar_salidas                          # todos los casos
     python -m src.exportar_salidas caso_multi_grande        # solo los indicados
+    python -m src.exportar_salidas divide_venceras          # solo esas técnicas
     python -m src.exportar_salidas --sin-fuerza-bruta       # omite la más lenta
 
 Fuerza bruta y backtracking se omiten cuando S > 4 (ver MAX_SESIONES).
@@ -27,6 +28,7 @@ from pathlib import Path
 from .backtracking import backtracking
 from .cargador import cargar_datos
 from .dinamica import dinamica
+from .divide_venceras import divide_venceras
 from .fuerza_bruta import fuerza_bruta
 from .generar_sesiones import generar_sesiones
 from .greedy import greedy
@@ -51,6 +53,7 @@ TECNICAS = {
     "greedy": greedy,
     "backtracking": backtracking,
     "dinamica": dinamica,
+    "divide_venceras": divide_venceras,
 }
 
 
@@ -83,7 +86,8 @@ def _metricas(resultado: dict) -> dict:
     }
 
 
-def exportar(casos: list[str], incluir_fuerza_bruta: bool = True) -> None:
+def exportar(casos: list[str], tecnicas: list[str] | None = None,
+             incluir_fuerza_bruta: bool = True) -> None:
     raiz = Path(__file__).resolve().parent.parent
     carpeta = raiz / "datos" / "salidas"
 
@@ -93,10 +97,12 @@ def exportar(casos: list[str], incluir_fuerza_bruta: bool = True) -> None:
         idx = construir_indices(d, sesiones)
 
         for nombre, funcion in TECNICAS.items():
+            if tecnicas and nombre not in tecnicas:
+                continue
             if nombre == "fuerza_bruta" and not incluir_fuerza_bruta:
                 continue
             if len(sesiones) > MAX_SESIONES.get(nombre, len(sesiones)):
-                print(f"{caso:<19} {nombre:<13} omitido (S={len(sesiones)} > "
+                print(f"{caso:<19} {nombre:<15} omitido (S={len(sesiones)} > "
                       f"{MAX_SESIONES[nombre]})", flush=True)
                 continue
 
@@ -120,11 +126,12 @@ def exportar(casos: list[str], incluir_fuerza_bruta: bool = True) -> None:
             with open(ruta, "w", encoding="utf-8") as f:
                 json.dump(contenido, f, indent=2, ensure_ascii=False)
 
-            print(f"{caso:<19} {nombre:<13} calidad={r['calidad']:.4f}  "
+            print(f"{caso:<19} {nombre:<15} calidad={r['calidad']:.4f}  "
                   f"tiempo={t:.4f}s  -> {ruta.relative_to(raiz)}", flush=True)
 
 
 if __name__ == "__main__":
-    args = sys.argv[1:]
-    elegidos = [a for a in args if not a.startswith("--")] or CASOS
-    exportar(elegidos, incluir_fuerza_bruta="--sin-fuerza-bruta" not in args)
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    casos = [a for a in args if a not in TECNICAS] or CASOS
+    tecnicas = [a for a in args if a in TECNICAS] or None
+    exportar(casos, tecnicas, incluir_fuerza_bruta="--sin-fuerza-bruta" not in sys.argv)

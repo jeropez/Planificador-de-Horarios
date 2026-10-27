@@ -40,6 +40,15 @@
       "completa": true
     },
     {
+      "S": 1,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 9.67499945545569e-05,
+      "calidad": 1.0,
+      "preferencia": 1.0,
+      "trabajo": 30,
+      "completa": true
+    },
+    {
       "S": 2,
       "tecnica": "fuerza_bruta",
       "tiempo_s": 0.020878084003925323,
@@ -73,6 +82,15 @@
       "calidad": 0.6000000000000001,
       "preferencia": 2.0,
       "trabajo": 120,
+      "completa": true
+    },
+    {
+      "S": 2,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0003286250139353797,
+      "calidad": 1.0,
+      "preferencia": 2.0,
+      "trabajo": 435,
       "completa": true
     },
     {
@@ -112,6 +130,15 @@
       "completa": true
     },
     {
+      "S": 3,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.00048733300354797393,
+      "calidad": 1.0,
+      "preferencia": 3.0,
+      "trabajo": 465,
+      "completa": true
+    },
+    {
       "S": 4,
       "tecnica": "fuerza_bruta",
       "tiempo_s": 117.41121120798925,
@@ -148,6 +175,15 @@
       "completa": true
     },
     {
+      "S": 4,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0006167079991428182,
+      "calidad": 1.0,
+      "preferencia": 4.0,
+      "trabajo": 870,
+      "completa": true
+    },
+    {
       "S": 5,
       "tecnica": "greedy",
       "tiempo_s": 0.0011812080047093332,
@@ -163,6 +199,15 @@
       "calidad": 0.7000000000000001,
       "preferencia": 5.0,
       "trabajo": 942,
+      "completa": true
+    },
+    {
+      "S": 5,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0006157089956104755,
+      "calidad": 1.0,
+      "preferencia": 5.0,
+      "trabajo": 900,
       "completa": true
     },
     {
@@ -184,6 +229,15 @@
       "completa": true
     },
     {
+      "S": 6,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0025295420055044815,
+      "calidad": 1.0,
+      "preferencia": 6.0,
+      "trabajo": 1305,
+      "completa": true
+    },
+    {
       "S": 7,
       "tecnica": "greedy",
       "tiempo_s": 0.0019404170016059652,
@@ -199,6 +253,15 @@
       "calidad": 0.8,
       "preferencia": 7.0,
       "trabajo": 3709,
+      "completa": true
+    },
+    {
+      "S": 7,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0011640839948086068,
+      "calidad": 1.0,
+      "preferencia": 7.0,
+      "trabajo": 1335,
       "completa": true
     },
     {
@@ -220,6 +283,15 @@
       "completa": true
     },
     {
+      "S": 8,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0030911250069038942,
+      "calidad": 1.0,
+      "preferencia": 8.0,
+      "trabajo": 1740,
+      "completa": true
+    },
+    {
       "S": 9,
       "tecnica": "greedy",
       "tiempo_s": 0.0028920000040670857,
@@ -235,6 +307,15 @@
       "calidad": 0.7000000000000001,
       "preferencia": 9.0,
       "trabajo": 14588,
+      "completa": true
+    },
+    {
+      "S": 9,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0022628750011790544,
+      "calidad": 0.9833333333333334,
+      "preferencia": 8.5,
+      "trabajo": 1770,
       "completa": true
     },
     {
@@ -256,6 +337,15 @@
       "completa": true
     },
     {
+      "S": 10,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0015433749940712005,
+      "calidad": 1.0,
+      "preferencia": 10.0,
+      "trabajo": 2175,
+      "completa": true
+    },
+    {
       "S": 11,
       "tecnica": "greedy",
       "tiempo_s": 0.0037813750095665455,
@@ -271,6 +361,15 @@
       "calidad": 0.7600000000000001,
       "preferencia": 11.0,
       "trabajo": 57339,
+      "completa": true
+    },
+    {
+      "S": 11,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.0023107080050976947,
+      "calidad": 1.0,
+      "preferencia": 11.0,
+      "trabajo": 2205,
       "completa": true
     },
     {
@@ -292,6 +391,15 @@
       "completa": true
     },
     {
+      "S": 12,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.006511083003715612,
+      "calidad": 0.9500000000000001,
+      "preferencia": 12.0,
+      "trabajo": 2610,
+      "completa": true
+    },
+    {
       "S": 13,
       "tecnica": "greedy",
       "tiempo_s": 0.004908999995677732,
@@ -310,6 +418,15 @@
       "completa": true
     },
     {
+      "S": 13,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.006146667001303285,
+      "calidad": 1.0,
+      "preferencia": 13.0,
+      "trabajo": 2640,
+      "completa": true
+    },
+    {
       "S": 14,
       "tecnica": "greedy",
       "tiempo_s": 0.00568908300192561,
@@ -325,6 +442,15 @@
       "calidad": 0.8857142857142859,
       "preferencia": 14.0,
       "trabajo": 446457,
+      "completa": true
+    },
+    {
+      "S": 14,
+      "tecnica": "divide_venceras",
+      "tiempo_s": 0.00857908399484586,
+      "calidad": 1.0,
+      "preferencia": 14.0,
+      "trabajo": 3045,
       "completa": true
     }
   ]

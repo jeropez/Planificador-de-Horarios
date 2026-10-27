@@ -1,0 +1,704 @@
+{
+  "caso": "caso_multi_grande",
+  "tecnica": "divide_venceras",
+  "sesiones": 12,
+  "tiempo_s": 0.016034,
+  "metricas": {
+    "calidad": 0.9625000000000001,
+    "completa": true,
+    "subproblemas": 4,
+    "combinaciones_evaluadas": 16240,
+    "reparaciones": 0,
+    "ajustes_salones": 2,
+    "cota_superior": 0.9624999999999998,
+    "optimo_garantizado": true
+  },
+  "asignaciones": [
+    {
+      "materia": "Análisis y Diseño de Algoritmos",
+      "profesor": "Profesor_02",
+      "grupo": "G02",
+      "dia": "lunes",
+      "franja": "10:00-12:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Ecuaciones Diferenciales",
+      "profesor": "Profesor_04",
+      "grupo": "G04",
+      "dia": "lunes",
+      "franja": "14:00-16:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Cálculo en Varias Variables",
+      "profesor": "Profesor_01",
+      "grupo": "G01",
+      "dia": "lunes",
+      "franja": "16:00-18:00",
+      "salon": "8-309",
+      "preferencia_profesor": 1
+    },
+    {
+      "materia": "Modelos de Datos",
+      "profesor": "Profesor_03",
+      "grupo": "G03",
+      "dia": "martes",
+      "franja": "06:00-08:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Análisis y Diseño de Algoritmos",
+      "profesor": "Profesor_02",
+      "grupo": "G02",
+      "dia": "martes",
+      "franja": "10:00-12:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Ecuaciones Diferenciales",
+      "profesor": "Profesor_04",
+      "grupo": "G04",
+      "dia": "martes",
+      "franja": "14:00-16:00",
+      "salon": "8-309",
+      "preferencia_profesor": 1
+    },
+    {
+      "materia": "Ecuaciones Diferenciales",
+      "profesor": "Profesor_04",
+      "grupo": "G04",
+      "dia": "miercoles",
+      "franja": "14:00-16:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Modelos de Datos",
+      "profesor": "Profesor_03",
+      "grupo": "G03",
+      "dia": "jueves",
+      "franja": "06:00-08:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Análisis y Diseño de Algoritmos",
+      "profesor": "Profesor_02",
+      "grupo": "G02",
+      "dia": "jueves",
+      "franja": "10:00-12:00",
+      "salon": "8-309",
+      "preferencia_profesor": 1
+    },
+    {
+      "materia": "Cálculo en Varias Variables",
+      "profesor": "Profesor_01",
+      "grupo": "G01",
+      "dia": "jueves",
+      "franja": "16:00-18:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Modelos de Datos",
+      "profesor": "Profesor_03",
+      "grupo": "G03",
+      "dia": "viernes",
+      "franja": "06:00-08:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Cálculo en Varias Variables",
+      "profesor": "Profesor_01",
+      "grupo": "G01",
+      "dia": "viernes",
+      "franja": "16:00-18:00",
+      "salon": "8-309",
+      "preferencia_profesor": 2
+    }
+  ],
+  "horario_por_salon": {
+    "8-309": [
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Análisis y Diseño de Algoritmos",
+          "Profesor_02",
+          "G02",
+          "10:00-12:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ecuaciones Diferenciales",
+          "Profesor_04",
+          "G04",
+          "14:00-16:00"
+        ],
+        [
+          "Cálculo en Varias Variables",
+          "Profesor_01",
+          "G01",
+          "16:00-18:00"
+        ]
+      ],
+      [
+        [
+          "Modelos de Datos",
+          "Profesor_03",
+          "G03",
+          "06:00-08:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Análisis y Diseño de Algoritmos",
+          "Profesor_02",
+          "G02",
+          "10:00-12:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ecuaciones Diferenciales",
+          "Profesor_04",
+          "G04",
+          "14:00-16:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ecuaciones Diferenciales",
+          "Profesor_04",
+          "G04",
+          "14:00-16:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          "Modelos de Datos",
+          "Profesor_03",
+          "G03",
+          "06:00-08:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Análisis y Diseño de Algoritmos",
+          "Profesor_02",
+          "G02",
+          "10:00-12:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Cálculo en Varias Variables",
+          "Profesor_01",
+          "G01",
+          "16:00-18:00"
+        ]
+      ],
+      [
+        [
+          "Modelos de Datos",
+          "Profesor_03",
+          "G03",
+          "06:00-08:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Cálculo en Varias Variables",
+          "Profesor_01",
+          "G01",
+          "16:00-18:00"
+        ]
+      ]
+    ],
+    "7-306": [
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    ],
+    "2-300": [
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    ]
+  }
+}
