@@ -1,0 +1,331 @@
+{
+  "descripcion": "2 salones, 30 bloques, materias de 2 sesiones; S = sesiones",
+  "bloques": 30,
+  "salones": 2,
+  "resultados": [
+    {
+      "S": 1,
+      "tecnica": "fuerza_bruta",
+      "tiempo_s": 0.00017420800577383488,
+      "calidad": 1.0,
+      "preferencia": 1.0,
+      "trabajo": 60,
+      "completa": true
+    },
+    {
+      "S": 1,
+      "tecnica": "greedy",
+      "tiempo_s": 0.00015312500181607902,
+      "calidad": 1.0,
+      "preferencia": 1.0,
+      "trabajo": 60,
+      "completa": true
+    },
+    {
+      "S": 1,
+      "tecnica": "backtracking",
+      "tiempo_s": 0.00019249999604653567,
+      "calidad": 1.0,
+      "preferencia": 1.0,
+      "trabajo": 61,
+      "completa": true
+    },
+    {
+      "S": 1,
+      "tecnica": "dinamica",
+      "tiempo_s": 6.858300184831023e-05,
+      "calidad": 1.0,
+      "preferencia": 1.0,
+      "trabajo": 61,
+      "completa": true
+    },
+    {
+      "S": 2,
+      "tecnica": "fuerza_bruta",
+      "tiempo_s": 0.020878084003925323,
+      "calidad": 1.0,
+      "preferencia": 2.0,
+      "trabajo": 3600,
+      "completa": true
+    },
+    {
+      "S": 2,
+      "tecnica": "greedy",
+      "tiempo_s": 0.00034124999365303665,
+      "calidad": 1.0,
+      "preferencia": 2.0,
+      "trabajo": 118,
+      "completa": true
+    },
+    {
+      "S": 2,
+      "tecnica": "backtracking",
+      "tiempo_s": 0.014768666995223612,
+      "calidad": 1.0,
+      "preferencia": 2.0,
+      "trabajo": 3541,
+      "completa": true
+    },
+    {
+      "S": 2,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.0001413749996572733,
+      "calidad": 0.6000000000000001,
+      "preferencia": 2.0,
+      "trabajo": 120,
+      "completa": true
+    },
+    {
+      "S": 3,
+      "tecnica": "fuerza_bruta",
+      "tiempo_s": 1.3987320420128526,
+      "calidad": 1.0,
+      "preferencia": 3.0,
+      "trabajo": 216000,
+      "completa": true
+    },
+    {
+      "S": 3,
+      "tecnica": "greedy",
+      "tiempo_s": 0.0005282500060275197,
+      "calidad": 1.0,
+      "preferencia": 3.0,
+      "trabajo": 176,
+      "completa": true
+    },
+    {
+      "S": 3,
+      "tecnica": "backtracking",
+      "tiempo_s": 1.0025456250004936,
+      "calidad": 1.0,
+      "preferencia": 3.0,
+      "trabajo": 205381,
+      "completa": true
+    },
+    {
+      "S": 3,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.0003452079981798306,
+      "calidad": 1.0,
+      "preferencia": 3.0,
+      "trabajo": 239,
+      "completa": true
+    },
+    {
+      "S": 4,
+      "tecnica": "fuerza_bruta",
+      "tiempo_s": 117.41121120798925,
+      "calidad": 1.0,
+      "preferencia": 4.0,
+      "trabajo": 12960000,
+      "completa": true
+    },
+    {
+      "S": 4,
+      "tecnica": "greedy",
+      "tiempo_s": 0.0009102500043809414,
+      "calidad": 0.9625000000000001,
+      "preferencia": 3.5,
+      "trabajo": 232,
+      "completa": true
+    },
+    {
+      "S": 4,
+      "tecnica": "backtracking",
+      "tiempo_s": 66.66595162499289,
+      "calidad": 1.0,
+      "preferencia": 4.0,
+      "trabajo": 11515381,
+      "completa": true
+    },
+    {
+      "S": 4,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.0009870840003713965,
+      "calidad": 0.8,
+      "preferencia": 4.0,
+      "trabajo": 474,
+      "completa": true
+    },
+    {
+      "S": 5,
+      "tecnica": "greedy",
+      "tiempo_s": 0.0011812080047093332,
+      "calidad": 0.9400000000000002,
+      "preferencia": 4.0,
+      "trabajo": 288,
+      "completa": true
+    },
+    {
+      "S": 5,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.0027277089975541458,
+      "calidad": 0.7000000000000001,
+      "preferencia": 5.0,
+      "trabajo": 942,
+      "completa": true
+    },
+    {
+      "S": 6,
+      "tecnica": "greedy",
+      "tiempo_s": 0.0014707919908687472,
+      "calidad": 0.9750000000000001,
+      "preferencia": 5.5,
+      "trabajo": 342,
+      "completa": true
+    },
+    {
+      "S": 6,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.007424916999298148,
+      "calidad": 0.8,
+      "preferencia": 6.0,
+      "trabajo": 1869,
+      "completa": true
+    },
+    {
+      "S": 7,
+      "tecnica": "greedy",
+      "tiempo_s": 0.0019404170016059652,
+      "calidad": 0.9785714285714286,
+      "preferencia": 6.5,
+      "trabajo": 396,
+      "completa": true
+    },
+    {
+      "S": 7,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.020359540998470038,
+      "calidad": 0.8,
+      "preferencia": 7.0,
+      "trabajo": 3709,
+      "completa": true
+    },
+    {
+      "S": 8,
+      "tecnica": "greedy",
+      "tiempo_s": 0.002371166003285907,
+      "calidad": 0.9812500000000002,
+      "preferencia": 7.5,
+      "trabajo": 448,
+      "completa": true
+    },
+    {
+      "S": 8,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.055036040997947566,
+      "calidad": 0.6500000000000001,
+      "preferencia": 8.0,
+      "trabajo": 7356,
+      "completa": true
+    },
+    {
+      "S": 9,
+      "tecnica": "greedy",
+      "tiempo_s": 0.0028920000040670857,
+      "calidad": 0.9833333333333334,
+      "preferencia": 8.5,
+      "trabajo": 500,
+      "completa": true
+    },
+    {
+      "S": 9,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.14437695800734218,
+      "calidad": 0.7000000000000001,
+      "preferencia": 9.0,
+      "trabajo": 14588,
+      "completa": true
+    },
+    {
+      "S": 10,
+      "tecnica": "greedy",
+      "tiempo_s": 0.00343429199710954,
+      "calidad": 0.9700000000000002,
+      "preferencia": 9.0,
+      "trabajo": 550,
+      "completa": true
+    },
+    {
+      "S": 10,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.38158645801013336,
+      "calidad": 0.6800000000000002,
+      "preferencia": 10.0,
+      "trabajo": 28923,
+      "completa": true
+    },
+    {
+      "S": 11,
+      "tecnica": "greedy",
+      "tiempo_s": 0.0037813750095665455,
+      "calidad": 0.9863636363636366,
+      "preferencia": 10.5,
+      "trabajo": 600,
+      "completa": true
+    },
+    {
+      "S": 11,
+      "tecnica": "dinamica",
+      "tiempo_s": 0.9872154170006979,
+      "calidad": 0.7600000000000001,
+      "preferencia": 11.0,
+      "trabajo": 57339,
+      "completa": true
+    },
+    {
+      "S": 12,
+      "tecnica": "greedy",
+      "tiempo_s": 0.004221625000354834,
+      "calidad": 0.9875,
+      "preferencia": 11.5,
+      "trabajo": 648,
+      "completa": true
+    },
+    {
+      "S": 12,
+      "tecnica": "dinamica",
+      "tiempo_s": 2.533943915987038,
+      "calidad": 0.8333333333333335,
+      "preferencia": 12.0,
+      "trabajo": 113658,
+      "completa": true
+    },
+    {
+      "S": 13,
+      "tecnica": "greedy",
+      "tiempo_s": 0.004908999995677732,
+      "calidad": 0.9435897435897438,
+      "preferencia": 12.0,
+      "trabajo": 696,
+      "completa": true
+    },
+    {
+      "S": 13,
+      "tecnica": "dinamica",
+      "tiempo_s": 6.615485625006841,
+      "calidad": 0.7333333333333334,
+      "preferencia": 13.0,
+      "trabajo": 225274,
+      "completa": true
+    },
+    {
+      "S": 14,
+      "tecnica": "greedy",
+      "tiempo_s": 0.00568908300192561,
+      "calidad": 0.967857142857143,
+      "preferencia": 12.5,
+      "trabajo": 742,
+      "completa": true
+    },
+    {
+      "S": 14,
+      "tecnica": "dinamica",
+      "tiempo_s": 16.50209129099676,
+      "calidad": 0.8857142857142859,
+      "preferencia": 14.0,
+      "trabajo": 446457,
+      "completa": true
+    }
+  ]
+}

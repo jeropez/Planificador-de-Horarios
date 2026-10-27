@@ -21,7 +21,15 @@ Planificador-de-Horarios/
 ├── .gitignore
 │
 ├── analisis/
-│   └── medicion_empirica.py 
+│   ├── medicion_empirica.py 
+│   ├── comparar_dp_backtracking.py  # DP vs backtracking + escalabilidad DP
+│   └── benchmark_tecnicas.py        # tiempos de las 4 técnicas, S = 1..14
+│
+├── interfaz/
+│   ├── index.html                   # abrir en el navegador
+│   ├── estilos.css
+│   ├── app.js
+│   └── datos.js                     # generado por src.construir_interfaz
 │
 ├── datos/
 │   ├── caso_pequeno.json            # S = 2 sesiones
@@ -60,6 +68,10 @@ Planificador-de-Horarios/
     ├── validadores.py           # restricciones duras R1–R5
     ├── calidad.py               # función de calidad (preferencias blandas)
     ├── fuerza_bruta.py          # algoritmo principal
+    ├── dinamica.py              # programación dinámica por bloques
+    ├── generar_casos_multisesion.py  # casos con varias sesiones por materia
+    ├── exportar_salidas.py      # JSON del horario de cada técnica
+    ├── construir_interfaz.py    # empaqueta los datos de la interfaz
     ├── salida.py                # formato final por salón
     └── experimento.py           # mide tiempos y genera la gráfica
 ```
@@ -272,6 +284,115 @@ El término dominante es `60^S`, exponencial en el número de sesiones.
 Cada incremento de `S` multiplica las combinaciones por exactamente **60**, confirmando el crecimiento `60^S`. El tiempo crece en el mismo orden de magnitud.
 
 La gráfica en `docs/complejidad_fuerza_bruta.png` muestra ambos ejes en escala logarítmica, donde `60^S` aparece como una recta.
+
+---
+
+## Programación dinámica (`src/dinamica.py`)
+
+### Por qué aplica
+
+Las restricciones R3, R4 y R5 solo relacionan sesiones que caen en el **mismo bloque**, y R1 es individual. Dos sesiones en bloques distintos nunca entran en conflicto. Por eso el problema se resuelve bloque a bloque, recordando solo **qué** sesiones ya fueron programadas:
+
+- **Estado:** `dp[b][mask]` = máxima preferencia acumulada usando los bloques `0..b-1`, donde `mask` es el conjunto de sesiones ya ubicadas.
+- **Transición:** en el bloque `b` se elige un subconjunto `T` de sesiones pendientes que quepa en él: profesores distintos (R4), grupos distintos (R5) y un salón con capacidad suficiente para cada sesión (R1, R3). `dp[b+1][mask ∪ T] = max(dp[b][mask] + valor(b, T))`.
+- **Respuesta:** `dp[B][todas]`, que garantiza R6.
+- **Subproblemas solapados:** distintos órdenes de colocar las mismas sesiones llegan a la misma `mask`; la DP los resuelve una sola vez.
+
+Para saber si `T` cabe en un bloque, se ordenan sesiones y salones de mayor a menor y se emparejan en ese orden (R1 es un umbral, así que basta). Los subconjuntos factibles se precalculan una sola vez, porque no dependen del bloque.
+
+### Modelo restringido
+
+La DP optimiza la **preferencia del profesor**, que es aditiva por (sesión, bloque). Los términos por pares del mismo grupo (misma franja, mismo salón, días distintos) y el uso global de salones **no son aditivos**: incluirlos exigiría guardar en el estado la franja, el salón y el día de cada sesión ya puesta, y el número de estados volvería a explotar. Por eso la solución es **óptima para R1–R6 + preferencia**, y `evaluar_calidad` se reporta solo como medida.
+
+Como desempate se resta una penalización mínima (`1e-3`) por cada par de sesiones en el mismo bloque. Nunca cambia la preferencia óptima, pero favorece horarios que usan menos salones a la vez.
+
+### Complejidad
+
+- **Temporal:** cada máscara recorre los subconjuntos de su complemento, `O(3^S)` por bloque. **Total: `O(B · 3^S)`**, frente a `O(60^S · S²)` de la fuerza bruta.
+- **Espacial:** `O(2^S)` para los subconjuntos factibles más `O(B · 2^S)` para los punteros de reconstrucción.
+
+### Resultados: DP vs backtracking
+
+```bash
+python -m analisis.comparar_dp_backtracking
+```
+
+| Caso | S | DP preferencia | DP calidad | DP tiempo (s) | BT preferencia | BT calidad | BT tiempo (s) | BT nodos |
+|---|---|---|---|---|---|---|---|---|
+| caso_pequeno | 2 | 2.00 | 1.000 | 0.0002 | 2.00 | 1.000 | 0.0135 | 3 601 |
+| caso_mediano | 3 | 3.00 | 1.000 | 0.0004 | 3.00 | 1.000 | 0.9230 | 208 921 |
+| caso_grande | 4 | 4.00 | 1.000 | 0.0010 | 4.00 | 1.000 | 60.2851 | 11 912 161 |
+| sintético (2 materias × 2 sesiones) | 4 | 4.00 | 0.800 | 0.0010 | 4.00 | 1.000 | 66.2271 | 11 515 381 |
+
+- La DP alcanza siempre la **misma preferencia óptima** que backtracking, unas 60 000 veces más rápido en `S = 4`.
+- En el caso sintético cada grupo tiene dos sesiones y los términos por pares sí cuentan: la DP no los optimiza y obtiene calidad 0.800 frente a 1.000. Es el costo del modelo restringido.
+
+### Escalabilidad de la DP
+
+| S | Estados explorados | Subconjuntos factibles | Tiempo (s) |
+|---|---|---|---|
+| 6 | 1 884 | 26 | 0.009 |
+| 8 | 7 481 | 64 | 0.074 |
+| 10 | 29 651 | 130 | 0.598 |
+| 12 | 117 353 | 232 | 4.477 |
+| 14 | 464 122 | 378 | 30.788 |
+
+Cada 2 sesiones adicionales el tiempo se multiplica por unas 7–8 veces, cerca del factor `3² = 9` esperado. El límite práctico ronda `S ≈ 14`, frente a `S = 4` para la fuerza bruta.
+
+---
+
+## Casos multisesión y salidas por técnica
+
+En los casos originales cada materia tiene una sola sesión, así que los términos por pares de la calidad no aportan y las cuatro técnicas empatan en 1.0. Para que se diferencien se agregaron casos con varias sesiones por materia, sin modificar los originales:
+
+| Caso | Materias | Grupos | Sesiones por grupo | Salones | S |
+|---|---|---|---|---|---|
+| `caso_multi_pequeno` | 2 | 2 | 2 | 2 | 4 |
+| `caso_multi_mediano` | 2 | 4 | 2 | 2 | 8 |
+| `caso_multi_grande` | 4 | 4 | 3 | 3 | 12 |
+
+```bash
+python -m src.generar_casos_multisesion   # crea los 3 JSON en datos/ (semilla 2026)
+python -m src.exportar_salidas            # horario de cada técnica en cada caso
+python -m src.exportar_salidas caso_multi_grande   # solo los casos indicados
+```
+
+`exportar_salidas` escribe `datos/salidas/<caso>/<tecnica>.json` con las métricas, la lista de asignaciones legible (materia, profesor, grupo, día, franja, salón, preferencia) y el horario por salón. Fuerza bruta y backtracking se omiten cuando `S > 4`, porque no terminan en un tiempo razonable.
+
+### Resultados (calidad · preferencia acumulada · tiempo)
+
+| Caso | S | Fuerza bruta | Greedy | Backtracking | DP |
+|---|---|---|---|---|---|
+| `caso_multi_pequeno` | 4 | 1.000 · 4.0 · 112.7 s | 1.000 · 4.0 · 0.0008 s | 1.000 · 4.0 · 65.6 s | 0.600 · 4.0 · 0.0010 s |
+| `caso_multi_mediano` | 8 | — | 0.963 · 7.0 · 0.0023 s | — | 0.700 · **8.0** · 0.043 s |
+| `caso_multi_grande` | 12 | — | 0.938 · 9.5 · 0.0071 s | — | 0.733 · **12.0** · 3.60 s |
+
+- **La DP maximiza la preferencia** (es óptima en ese objetivo y le gana a greedy por 1 y 2.5 puntos), pero **no optimiza los términos por pares**. Por eso su calidad completa es menor.
+- **Greedy** optimiza la calidad completa paso a paso y aquí obtiene la mejor calidad entre las técnicas que escalan, aunque no garantiza el óptimo (ver `analisis/contraejemplo_greedy.py`).
+- **Fuerza bruta y backtracking** dan el óptimo de la calidad completa, pero solo son viables hasta `S = 4`.
+
+---
+
+## Interfaz gráfica (`interfaz/`)
+
+Página web con dos pestañas:
+
+- **Horarios:** eliges un caso y una técnica, y ves sus métricas (calidad, preferencia, tiempo, salones, trabajo). El horario se puede ver como **semana** (días × franjas, coloreado por materia), como **tabla** ordenable con descarga en CSV, o en **Comparar técnicas**, que pone los horarios de las cuatro técnicas lado a lado y marca qué clases quedaron en otro día o franja. Se puede filtrar por día, materia, profesor, grupo, salón o texto. Al pasar el cursor sobre una clase se resaltan las demás de su grupo, y al hacer clic se abre su detalle.
+- **Análisis:** resumen de cada técnica (complejidad temporal y espacial, optimalidad, límite práctico), gráficas de tiempo medido (escala log/lineal), trabajo realizado, complejidad teórica, calidad y preferencia por caso, calidad a medida que crece `S`, aceleración frente a la fuerza bruta, una calculadora que estima cuánto tardaría cada técnica con `S` sesiones y una tabla comparativa.
+
+### Cómo abrirla
+
+Abrir `interfaz/index.html` con doble clic en el navegador. Las gráficas usan Chart.js desde un CDN, así que necesitan conexión a internet.
+
+### Cómo regenerar los datos
+
+La página lee `interfaz/datos.js`, que se arma a partir de las salidas y del benchmark:
+
+```bash
+python -m src.exportar_salidas          # JSON de cada técnica en datos/salidas/ (~6 min)
+python -m analisis.benchmark_tecnicas   # tiempos para S = 1..14 en datos/benchmark_tecnicas.json (~5 min)
+python -m src.construir_interfaz        # empaqueta todo en interfaz/datos.js
+```
 
 ---
 

@@ -1,0 +1,471 @@
+{
+  "caso": "caso_multi_mediano",
+  "tecnica": "greedy",
+  "sesiones": 8,
+  "tiempo_s": 0.002146,
+  "metricas": {
+    "calidad": 0.9625000000000001,
+    "completa": true,
+    "candidatos_evaluados": 440
+  },
+  "asignaciones": [
+    {
+      "materia": "Cálculo en Varias Variables",
+      "profesor": "Profesor_01",
+      "grupo": "G01",
+      "dia": "lunes",
+      "franja": "06:00-08:00",
+      "salon": "8-206",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Análisis y Diseño de Algoritmos",
+      "profesor": "Profesor_02",
+      "grupo": "G03",
+      "dia": "lunes",
+      "franja": "12:00-14:00",
+      "salon": "8-206",
+      "preferencia_profesor": 1
+    },
+    {
+      "materia": "Cálculo en Varias Variables",
+      "profesor": "Profesor_01",
+      "grupo": "G02",
+      "dia": "lunes",
+      "franja": "14:00-16:00",
+      "salon": "8-206",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Cálculo en Varias Variables",
+      "profesor": "Profesor_01",
+      "grupo": "G01",
+      "dia": "martes",
+      "franja": "06:00-08:00",
+      "salon": "8-206",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Análisis y Diseño de Algoritmos",
+      "profesor": "Profesor_02",
+      "grupo": "G04",
+      "dia": "martes",
+      "franja": "10:00-12:00",
+      "salon": "8-206",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Análisis y Diseño de Algoritmos",
+      "profesor": "Profesor_02",
+      "grupo": "G03",
+      "dia": "martes",
+      "franja": "12:00-14:00",
+      "salon": "8-206",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Cálculo en Varias Variables",
+      "profesor": "Profesor_01",
+      "grupo": "G02",
+      "dia": "miercoles",
+      "franja": "14:00-16:00",
+      "salon": "8-206",
+      "preferencia_profesor": 2
+    },
+    {
+      "materia": "Análisis y Diseño de Algoritmos",
+      "profesor": "Profesor_02",
+      "grupo": "G04",
+      "dia": "jueves",
+      "franja": "10:00-12:00",
+      "salon": "8-206",
+      "preferencia_profesor": 1
+    }
+  ],
+  "horario_por_salon": {
+    "14-203": [
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    ],
+    "8-206": [
+      [
+        [
+          "Cálculo en Varias Variables",
+          "Profesor_01",
+          "G01",
+          "06:00-08:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Análisis y Diseño de Algoritmos",
+          "Profesor_02",
+          "G03",
+          "12:00-14:00"
+        ],
+        [
+          "Cálculo en Varias Variables",
+          "Profesor_01",
+          "G02",
+          "14:00-16:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          "Cálculo en Varias Variables",
+          "Profesor_01",
+          "G01",
+          "06:00-08:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Análisis y Diseño de Algoritmos",
+          "Profesor_02",
+          "G04",
+          "10:00-12:00"
+        ],
+        [
+          "Análisis y Diseño de Algoritmos",
+          "Profesor_02",
+          "G03",
+          "12:00-14:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Cálculo en Varias Variables",
+          "Profesor_01",
+          "G02",
+          "14:00-16:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Análisis y Diseño de Algoritmos",
+          "Profesor_02",
+          "G04",
+          "10:00-12:00"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      [
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    ]
+  }
+}

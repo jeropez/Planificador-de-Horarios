@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planificador de Horarios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="barra-interior">
+      <div class="marca">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4M7 13h3M14 13h3M7 17h3"/></svg>
+        </div>
+        <div>
+          <h1>Planificador de Horarios</h1>
+          <p class="sub">Análisis y Diseño de Algoritmos</p>
+        </div>
+      </div>
+      <nav class="pestanas" role="tablist">
+        <button role="tab" class="pestana" data-tab="horarios" aria-selected="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M9 9v12M15 9v12"/></svg>
+          Horarios
+        </button>
+        <button role="tab" class="pestana" data-tab="analisis" aria-selected="false">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 20h18M6 16l4-5 4 3 5-7"/></svg>
+          Análisis
+        </button>
+      </nav>
+      <button id="tema" class="boton-icono" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= PESTAÑA HORARIOS ======================= -->
+    <section id="tab-horarios" class="tab" role="tabpanel">
+      <div class="paso">
+        <div class="paso-titulo"><span class="num">1</span> Elige un caso de prueba</div>
+        <div id="casos" class="fila-tarjetas"></div>
+      </div>
+
+      <div class="paso">
+        <div class="paso-titulo"><span class="num">2</span> Elige una técnica</div>
+        <div id="tecnicas" class="fila-tecnicas"></div>
+      </div>
+
+      <div id="kpis" class="kpis"></div>
+
+      <div class="panel">
+        <div class="panel-cabecera">
+          <div class="paso-titulo"><span class="num">3</span> Explora el horario</div>
+          <div class="segmentado" id="vistas">
+            <button data-vista="semana">Semana</button>
+            <button data-vista="tabla">Tabla</button>
+            <button data-vista="comparar">Comparar técnicas</button>
+          </div>
+        </div>
+        <div id="filtros" class="filtros"></div>
+        <div id="leyenda" class="leyenda"></div>
+        <div id="vista"></div>
+      </div>
+    </section>
+
+    <!-- ======================= PESTAÑA ANÁLISIS ======================= -->
+    <section id="tab-analisis" class="tab" role="tabpanel" hidden>
+      <div class="intro">
+        <h2>¿Qué técnica conviene y por qué?</h2>
+        <p>Comparamos fuerza bruta, voraz (greedy), backtracking y programación dinámica según el tiempo que tardan, el trabajo que hacen y la calidad del horario que entregan.</p>
+      </div>
+      <div id="resumen-tecnicas" class="grid-4"></div>
+
+      <div class="grid-2">
+        <div class="tarjeta-grafica">
+          <div class="tg-cabecera">
+            <div>
+              <h3>Tiempo de ejecución medido</h3>
+              <p>Segundos vs. número de sesiones <b>S</b>. Fuerza bruta y backtracking solo llegan a S = 4.</p>
+            </div>
+            <div class="segmentado pequeno" data-escala="g-tiempo">
+              <button data-valor="logarithmic" class="activo">Log</button>
+              <button data-valor="linear">Lineal</button>
+            </div>
+          </div>
+          <div class="lienzo"><canvas id="g-tiempo"></canvas></div>
+        </div>
+        <div class="tarjeta-grafica">
+          <div class="tg-cabecera">
+            <div>
+              <h3>Trabajo realizado</h3>
+              <p>Combinaciones, nodos, candidatos o estados que recorrió cada técnica.</p>
+            </div>
+          </div>
+          <div class="lienzo"><canvas id="g-trabajo"></canvas></div>
+        </div>
+      </div>
+
+      <div class="grid-2-1">
+        <div class="tarjeta-grafica">
+          <div class="tg-cabecera">
+            <div>
+              <h3>Complejidad teórica</h3>
+              <p>Operaciones estimadas con B = 30 bloques y A = 2 salones (escala logarítmica).</p>
+            </div>
+          </div>
+          <div class="lienzo"><canvas id="g-complejidad"></canvas></div>
+        </div>
+        <div class="tarjeta-grafica calculadora">
+          <h3>¿Cuánto tardaría con S sesiones?</h3>
+          <p>Extrapolado desde lo medido. Mueve el control.</p>
+          <div class="deslizador">
+            <input type="range" id="s-calc" min="1" max="40" value="10">
+            <div class="s-valor"><span id="s-calc-valor">10</span><small>sesiones</small></div>
+          </div>
+          <div id="calc-resultados"></div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="tarjeta-grafica">
+          <div class="tg-cabecera">
+            <div>
+              <h3>Calidad del horario por caso</h3>
+              <p>Función de calidad completa F ∈ [0, 1]. Más alto es mejor.</p>
+            </div>
+          </div>
+          <div class="lienzo"><canvas id="g-calidad"></canvas></div>
+        </div>
+        <div class="tarjeta-grafica">
+          <div class="tg-cabecera">
+            <div>
+              <h3>Preferencia de los profesores</h3>
+              <p>Suma de preferencias (0 / 0.5 / 1 por clase). Es lo que optimiza la DP.</p>
+            </div>
+          </div>
+          <div class="lienzo"><canvas id="g-preferencia"></canvas></div>
+        </div>
+      </div>
+
+      <div class="grid-2-1">
+        <div class="tarjeta-grafica">
+          <div class="tg-cabecera">
+            <div>
+              <h3>Calidad a medida que crece S</h3>
+              <p>Benchmark con materias de 2 sesiones. Muestra el costo del modelo restringido de la DP.</p>
+            </div>
+          </div>
+          <div class="lienzo"><canvas id="g-calidad-s"></canvas></div>
+        </div>
+        <div class="tarjeta-grafica">
+          <div class="tg-cabecera">
+            <div>
+              <h3>Aceleración vs. fuerza bruta</h3>
+              <p>Veces más rápido con S = 4.</p>
+            </div>
+          </div>
+          <div id="aceleracion" class="aceleracion"></div>
+        </div>
+      </div>
+
+      <div class="tarjeta-grafica">
+        <h3>Tabla comparativa</h3>
+        <div class="tabla-envoltura"><table id="tabla-comparativa" class="tabla"></table></div>
+      </div>
+
+      <div id="conclusiones" class="conclusiones"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-caja" role="dialog" aria-modal="true">
+      <button class="modal-cerrar boton-icono" aria-label="Cerrar">✕</button>
+      <div id="modal-contenido"></div>
+    </div>
+  </div>
+
+  <script src="datos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
