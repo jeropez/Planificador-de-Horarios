@@ -1,0 +1,76 @@
+{
+  "tamanos": [
+    100,
+    1000
+  ],
+  "salones": {
+    "100": 5,
+    "1000": 50
+  },
+  "resultados": {
+    "greedy": {
+      "100": {
+        "tiempo_s": 0.3961401249980554,
+        "estimado": false,
+        "calidad": 0.8280000000000001,
+        "completa": true
+      },
+      "1000": {
+        "tiempo_s": 360.7558281249949,
+        "estimado": false,
+        "calidad": 0.8193911764705885,
+        "completa": true
+      }
+    },
+    "divide_venceras": {
+      "100": {
+        "tiempo_s": 0.4319673749996582,
+        "estimado": false,
+        "calidad": 0.916,
+        "completa": true
+      },
+      "1000": {
+        "tiempo_s": 86.72414370899787,
+        "estimado": false,
+        "calidad": 0.9016222222222223,
+        "completa": true
+      }
+    },
+    "fuerza_bruta": {
+      "100": {
+        "log10_tiempo_s": 215.36211048961204,
+        "estimado": true,
+        "texto": "≈10^208 años"
+      },
+      "1000": {
+        "log10_tiempo_s": 3175.8442436397254,
+        "estimado": true,
+        "texto": "≈10^3168 años"
+      }
+    },
+    "backtracking": {
+      "100": {
+        "log10_tiempo_s": 214.11630500421717,
+        "estimado": true,
+        "texto": "≈10^207 años"
+      },
+      "1000": {
+        "log10_tiempo_s": 3174.5984381543303,
+        "estimado": true,
+        "texto": "≈10^3167 años"
+      }
+    },
+    "dinamica": {
+      "100": {
+        "log10_tiempo_s": 42.2499668912314,
+        "estimado": true,
+        "texto": "≈10^35 años"
+      },
+      "1000": {
+        "log10_tiempo_s": 471.65909613892757,
+        "estimado": true,
+        "texto": "≈10^464 años"
+      }
+    }
+  }
+}

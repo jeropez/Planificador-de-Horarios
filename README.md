@@ -57,6 +57,8 @@ Planificador-de-Horarios/
 ├── docs/
 │   ├── grafica_tiempos.png
 │   ├── entrega_1.pdf
+│   ├── entrega3_final.pdf           # documento final (entregas 1, 2 y 3)
+│   ├── comparativa_tiempos.png      # tiempos de las 5 técnicas (src.comparativa)
 │   └── complejidad_fuerza_bruta.png # gráfica tiempo vs tamaño
 │
 └── src/
@@ -86,6 +88,7 @@ Planificador-de-Horarios/
     ├── dinamica.py              # técnica 4: programación dinámica por bloques
     ├── divide_venceras.py       # técnica 5: divide y vencerás por materia
     ├── salida.py                # formato final por salón
+    ├── comparativa.py           # comparativa final: n = 100 y 1000 + gráfica de tiempos
     ├── exportar_salidas.py      # JSON del horario de cada técnica
     ├── construir_interfaz.py    # empaqueta los datos de la interfaz
     └── experimento.py           # mide tiempos de la fuerza bruta y genera la gráfica
@@ -220,7 +223,10 @@ python -m analisis.comparar_dp_backtracking  # DP vs backtracking
 python -m analisis.validar_divide_venceras   # divide y vencerás vs óptimo exhaustivo
 python -m analisis.benchmark_tecnicas        # las 5 técnicas, S = 1..14 (~5 min)
 python -m analisis.benchmark_tecnicas divide_venceras  # solo esa técnica
+python -m src.comparativa                    # n = 100 y 1000 + docs/comparativa_tiempos.png (~8 min)
 ```
+
+`src.comparativa` mide greedy y divide y vencerás con n = 100 y n = 1000. Fuerza bruta, backtracking y programación dinámica no terminan con esos tamaños, así que su tiempo se estima a partir del mayor n medido y su fórmula de complejidad (con n = 100, la fuerza bruta tardaría unos 10²⁰⁸ años).
 
 ### 4. Exportar los horarios y abrir la interfaz
 
